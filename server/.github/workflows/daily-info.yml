@@ -1,0 +1,56 @@
+name: 🗓 Info precios diario
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    env:
+      BASE_PAGE_URL: ${{ secrets.BASE_PAGE_URL }}
+      AUTH_PAGE_URL: ${{ secrets.AUTH_PAGE_URL }}
+      VYJ_USER:      ${{ secrets.VYJ_USER }}
+      VYJ_PASS:      ${{ secrets.VYJ_PASS }}
+      SMTP_HOST:     ${{ secrets.SMTP_HOST }}
+      SMTP_PORT:     ${{ secrets.SMTP_PORT }}
+      SMTP_USER:     ${{ secrets.SMTP_USER }}
+      SMTP_PASS:     ${{ secrets.SMTP_PASS }}
+      FROM_EMAIL:    ${{ secrets.FROM_EMAIL }}
+      TO_EMAIL:      ${{ secrets.TO_EMAIL }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Cache de npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar scraper
+        run: npm run scrape
+
+      - name: Guardar PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: reporte-pdf
+          path: reports/latest.pdf
+
+      - name: Guardar Excel
+        uses: actions/upload-artifact@v3
+        with:
+          name: reporte-xlsx
+          path: reports/latest.xlsx

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Comparativa de Precios por Marca y Tipo</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 20px; }
+      h1 { text-align: center; margin-bottom: 30px; }
+      h2 { margin-top: 40px; color: #333; }
+      h3 { margin-top: 20px; color: #555; }
+      table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 10px; }
+      th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+      th { background: #f2f2f2; }
+      .out-of-stock { color: #c00; font-weight: bold; }
+      .in-stock    { color: #080; }
+      .error       { color: #c00; font-style: italic; }
+    </style>
+  </head>
+  <body>
+    <h1>Comparativa de Precios por Marca y Tipo</h1>
+
+    <% /* Recorremos cada marca */ %>
+    <% Object.keys(grouped).forEach(brand => { %>
+      <h2><%= brand %></h2>
+
+      <% /* Dentro de cada marca, recorremos los tipos */ %>
+      <% Object.keys(grouped[brand]).forEach(type => { %>
+        <h3><%= type %></h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio Público</th>
+              <th>Precio Revendedor</th>
+              <th>Sabor</th>
+              <th>Presentación</th>
+              <th>Stock</th>
+              <th>Error</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% grouped[brand][type].forEach(p => { %>
+              <tr>
+                <td><%= p.name %></td>
+                <td><%= p.publicPrice %></td>
+                <td><%= p.resellerPrice || '-' %></td>
+                <td><%= p.sabor || '-' %></td>
+                <td><%= p.presentacion || '-' %></td>
+                <td class="<%= p.inStock === null ? '' : (p.inStock ? 'in-stock' : 'out-of-stock') %>">
+                  <%= p.inStock === null ? '-' : (p.inStock ? 'En stock' : 'Sin stock') %>
+                </td>
+                <td class="error"><%= p.error || '-' %></td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      <% }) %>
+
+    <% }) %>
+  </body>
+</html>
