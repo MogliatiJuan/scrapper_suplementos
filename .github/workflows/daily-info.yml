@@ -22,10 +22,10 @@ jobs:
       TO_EMAIL:      ${{ secrets.TO_EMAIL }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Cache npm modules
+      - name: Cache npm
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -41,17 +41,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run scraper
+      - name: Ejecutar scraper
         run: npm run scrape
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
         with:
           name: reporte-pdf
           path: server/reports/latest.pdf
 
-      - name: Upload Excel artifact
-        uses: actions/upload-artifact@v3
+      - name: Upload Excel
+        uses: actions/upload-artifact@v4
         with:
           name: reporte-xlsx
           path: server/reports/latest.xlsx
