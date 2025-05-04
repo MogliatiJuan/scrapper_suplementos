@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Cache npm
+      - name: Cache npm modules
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -45,13 +45,13 @@ jobs:
         run: npm run scrape
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: reporte-pdf
           path: server/reports/latest.pdf
 
       - name: Upload Excel artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: reporte-xlsx
           path: server/reports/latest.xlsx
