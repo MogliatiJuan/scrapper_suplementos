@@ -14,8 +14,8 @@ const app = express();
 app.use(cors());
 
 const PORT      = process.env.PORT || 4000;
-const BASE_URL  = process.env.BASE_PAGE_URL;
-const AUTH_URL  = process.env.AUTH_PAGE_URL;
+const BASE_URL = process.env.BASE_URL
+const AUTH_URL = process.env.AUTH_URL
 const VALID_BRANDS = [
   "Star","Ena","Gentech","Gold","Mervick","Max force","Granger",
 ];

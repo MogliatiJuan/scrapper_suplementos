@@ -9,8 +9,8 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     env:
-      BASE_PAGE_URL: ${{ secrets.BASE_PAGE_URL }}
-      AUTH_PAGE_URL: ${{ secrets.AUTH_PAGE_URL }}
+      BASE_URL:    ${{ secrets.BASE_URL }}
+      AUTH_URL:    ${{ secrets.AUTH_URL }}
       VYJ_USER:      ${{ secrets.VYJ_USER }}
       VYJ_PASS:      ${{ secrets.VYJ_PASS }}
       SMTP_HOST:     ${{ secrets.SMTP_HOST }}
