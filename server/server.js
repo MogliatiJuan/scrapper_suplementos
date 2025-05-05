@@ -93,8 +93,14 @@ function diffPrices(oldArr, newArr) {
 }
 
 async function generateAndSavePdf(html) {
-  const browser = await puppeteer.launch({ headless: "new" });
-  const page    = await browser.newPage();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+    ],
+  });
+    const page    = await browser.newPage();
   await page.setContent(html, { waitUntil:"networkidle0" });
   const pdfBuf = await page.pdf({ format:"A4", printBackground:true });
   await browser.close();
@@ -166,8 +172,14 @@ async function sendChangeEmail(changes) {
 }
 
 async function scrapeAll() {
-  const browser = await puppeteer.launch({ headless:"new" });
-  const page    = await browser.newPage();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+    ],
+  });
+    const page    = await browser.newPage();
   page.setDefaultNavigationTimeout(0);
 
   await page.goto(BASE_URL, { waitUntil:"networkidle0" });
