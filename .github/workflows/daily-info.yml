@@ -8,11 +8,6 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: server
-
     env:
       BASE_PAGE_URL: ${{ secrets.BASE_PAGE_URL }}
       AUTH_PAGE_URL: ${{ secrets.AUTH_PAGE_URL }}
@@ -33,7 +28,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('server/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
@@ -45,17 +40,17 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      - name: Ejecutar scraper
-        run: npm run dev
+      - name: Ejecutar scraper y enviar mail
+        run: npm run scrape
 
-      - name: Subir PDF como artifact
-        uses: actions/upload-artifact@v4
+      - name: Subir PDF como artefacto
+        uses: actions/upload-artifact@v3
         with:
           name: reporte-pdf
           path: server/reports/latest.pdf
 
-      - name: Subir Excel como artifact
-        uses: actions/upload-artifact@v4
+      - name: Subir Excel como artefacto
+        uses: actions/upload-artifact@v3
         with:
           name: reporte-xlsx
           path: server/reports/latest.xlsx

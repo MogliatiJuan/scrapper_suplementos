@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "scrape": "node server.js scrape",
     "dev": "nodemon server.js"
   },
   "dependencies": {
