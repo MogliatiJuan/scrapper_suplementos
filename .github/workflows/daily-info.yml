@@ -44,13 +44,13 @@ jobs:
         run: npm run scrape
 
       - name: Subir PDF como artefacto
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: reporte-pdf
           path: server/reports/latest.pdf
 
       - name: Subir Excel como artefacto
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: reporte-xlsx
           path: server/reports/latest.xlsx
