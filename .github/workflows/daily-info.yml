@@ -3,22 +3,23 @@ name: 🗓 Info precios diario
 on:
   schedule:
     - cron: '0 6 * * *'
-  workflow_dispatch:
+  workflow_dispatch:      
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    
     env:
       BASE_URL:    ${{ secrets.BASE_URL }}
       AUTH_URL:    ${{ secrets.AUTH_URL }}
-      VYJ_USER:      ${{ secrets.VYJ_USER }}
-      VYJ_PASS:      ${{ secrets.VYJ_PASS }}
-      SMTP_HOST:     ${{ secrets.SMTP_HOST }}
-      SMTP_PORT:     ${{ secrets.SMTP_PORT }}
-      SMTP_USER:     ${{ secrets.SMTP_USER }}
-      SMTP_PASS:     ${{ secrets.SMTP_PASS }}
-      FROM_EMAIL:    ${{ secrets.FROM_EMAIL }}
-      TO_EMAIL:      ${{ secrets.TO_EMAIL }}
+      VYJ_USER:    ${{ secrets.VYJ_USER }}
+      VYJ_PASS:    ${{ secrets.VYJ_PASS }}
+      SMTP_HOST:   ${{ secrets.SMTP_HOST }}
+      SMTP_PORT:   ${{ secrets.SMTP_PORT }}
+      SMTP_USER:   ${{ secrets.SMTP_USER }}
+      SMTP_PASS:   ${{ secrets.SMTP_PASS }}
+      FROM_EMAIL:  ${{ secrets.FROM_EMAIL }}
+      TO_EMAIL:    ${{ secrets.TO_EMAIL }}
 
     steps:
       - name: Checkout repo
@@ -30,12 +31,12 @@ jobs:
           node-version: '18'
 
       - name: Instalar dependencias (server)
-        run: npm install
         working-directory: server
+        run: npm install
 
       - name: Ejecutar scraper y enviar mail
-        run: npm run scrape
         working-directory: server
+        run: npm run scrape
 
       - name: Subir PDF como artefacto
         uses: actions/upload-artifact@v4
