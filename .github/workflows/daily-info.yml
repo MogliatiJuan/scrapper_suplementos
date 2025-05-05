@@ -24,24 +24,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Cache de npm
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Instalar dependencias
-        run: npm ci
+      - name: Instalar dependencias (server)
+        run: npm install
+        working-directory: server
 
       - name: Ejecutar scraper y enviar mail
         run: npm run scrape
+        working-directory: server
 
       - name: Subir PDF como artefacto
         uses: actions/upload-artifact@v4
