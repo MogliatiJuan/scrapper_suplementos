@@ -572,6 +572,50 @@
     "error": null
   },
   {
+    "name": "ena sport whey protein sobre sabor chocolate x25 grs",
+    "brand": "ENA SPORT",
+    "publicPrice": "",
+    "resellerPrice": null,
+    "presentacion": null,
+    "sabor": null,
+    "inStock": null,
+    "href": "https://vyjsuplementos.ar/producto/ena-sport-whey-protein-sobre-sabor-chocolate-x25-grs",
+    "error": "Waiting for selector `.product-price .price` failed: Waiting failed: 10000ms exceeded"
+  },
+  {
+    "name": "ena sport whey protein sobre sabor vainilla x25 grs",
+    "brand": "ENA SPORT",
+    "publicPrice": "",
+    "resellerPrice": null,
+    "presentacion": null,
+    "sabor": null,
+    "inStock": null,
+    "href": "https://vyjsuplementos.ar/producto/ena-sport-whey-protein-sobre-sabor-vainilla-x25-grs",
+    "error": "Waiting for selector `.product-price .price` failed: Waiting failed: 10000ms exceeded"
+  },
+  {
+    "name": "ena sport whey protein sobres sabor chocolate x12 unidades",
+    "brand": "ENA SPORT",
+    "publicPrice": "",
+    "resellerPrice": null,
+    "presentacion": null,
+    "sabor": null,
+    "inStock": null,
+    "href": "https://vyjsuplementos.ar/producto/ena-sport-whey-protein-sobres-sabor-chocolate-x12-unidades",
+    "error": "Waiting for selector `.product-price .price` failed: Waiting failed: 10000ms exceeded"
+  },
+  {
+    "name": "ena sport whey protein sobres sabor vainilla x12 unidades",
+    "brand": "ENA SPORT",
+    "publicPrice": "",
+    "resellerPrice": null,
+    "presentacion": null,
+    "sabor": null,
+    "inStock": null,
+    "href": "https://vyjsuplementos.ar/producto/ena-sport-whey-protein-sobres-sabor-vainilla-x12-unidades",
+    "error": "Waiting for selector `.product-price .price` failed: Waiting failed: 10000ms exceeded"
+  },
+  {
     "name": "ena sport whey protein true made banana 2,05 lbs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 49.413,72",
@@ -1235,12 +1279,12 @@
     "name": "gentech omega 3 epa & dha 60 caps",
     "brand": "GENTECH",
     "publicPrice": "$ 23.247,00",
-    "resellerPrice": null,
+    "resellerPrice": "$ 15.717,24",
     "presentacion": null,
     "sabor": null,
-    "inStock": null,
+    "inStock": true,
     "href": "https://vyjsuplementos.ar/producto/gentech-omega-3-epa-dha-60-caps",
-    "error": "Waiting for selector `.product-price .price` failed: Waiting failed: 10000ms exceeded"
+    "error": null
   },
   {
     "name": "gentech one week - sobres de proteinas chocolate 175 grs",
@@ -2811,7 +2855,7 @@
     "resellerPrice": "$ 23.465,05",
     "presentacion": null,
     "sabor": null,
-    "inStock": true,
+    "inStock": false,
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-real-blend-concentrate-hydrolized-vainilla-2-lbs",
     "error": null
   },
