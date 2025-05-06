@@ -3,12 +3,13 @@ name: 🗓 Info precios diario
 on:
   schedule:
     - cron: '0 13 * * *'
-  workflow_dispatch:      
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
     env:
       BASE_URL:    ${{ secrets.BASE_URL }}
       AUTH_URL:    ${{ secrets.AUTH_URL }}
@@ -24,6 +25,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -31,12 +35,23 @@ jobs:
           node-version: '18'
 
       - name: Instalar dependencias (server)
-        working-directory: server
         run: npm install
+        working-directory: server
 
       - name: Ejecutar scraper y enviar mail
-        working-directory: server
         run: npm run scrape
+        working-directory: server
+
+      - name: Commit y push de lastPrices.json
+        run: |
+          cd server
+          git add lastPrices.json
+          git diff --quiet --cached || (
+            git config user.name "github-actions[bot]" &&
+            git config user.email "actions@github.com" &&
+            git commit -m "ci: actualizar snapshot de precios" &&
+            git push
+          )
 
       - name: Subir PDF como artefacto
         uses: actions/upload-artifact@v4
