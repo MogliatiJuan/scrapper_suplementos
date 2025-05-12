@@ -105,25 +105,42 @@ async function generateAndSaveExcel(results) {
   ws.columns = [
     { header: "Marca", key: "brand", width: 20 },
     { header: "Producto", key: "name", width: 50 },
-    { header: "Precio Público", key: "publicPrice", width: 15 },
-    { header: "Precio Revendedor", key: "resellerPrice", width: 15 },
+    {
+      header: "Precio Público",
+      key: "publicPrice",
+      width: 15,
+      style: { numFmt: "#.##0,00" }
+    },
+    {
+      header: "Precio Revendedor",
+      key: "resellerPrice",
+      width: 15,
+      style: { numFmt: "#.##0,00" }
+    },
     { header: "Presentación", key: "presentacion", width: 15 },
     { header: "Sabor", key: "sabor", width: 15 },
     { header: "Stock", key: "inStock", width: 10 },
-    { header: "Error", key: "error", width: 30 },
+    { header: "Error", key: "error", width: 30 }
   ];
+
   results.forEach(p => {
+    const rawPub = (p.publicPrice || "").replace(/[^\d.,]/g, "");
+    const rawRev = (p.resellerPrice || "").replace(/[^\d.,]/g, "");
+    const numPub = parseFloat(rawPub.replace(/\./g, "").replace(/,/g, ".")) || 0;
+    const numRev = parseFloat(rawRev.replace(/\./g, "").replace(/,/g, ".")) || 0;
+
     ws.addRow({
       brand: p.brand,
       name: p.name,
-      publicPrice: p.publicPrice,
-      resellerPrice: p.resellerPrice || "-",
+      publicPrice: numPub,
+      resellerPrice: numRev,
       presentacion: p.presentacion || "-",
       sabor: p.sabor || "-",
       inStock: p.inStock === null ? "-" : (p.inStock ? "En stock" : "Sin stock"),
       error: p.error || ""
     });
   });
+
   await wb.xlsx.writeFile(path.join(REPORT_DIR, "latest.xlsx"));
 }
 
@@ -158,52 +175,33 @@ async function sendChangeEmail(changes) {
 async function scrapeAll() {
   const browser = await puppeteer.launch({
     headless: true,
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-extensions",
-      "--disable-gpu"
-    ]
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--disable-extensions", "--disable-gpu"]
   });
   const page = await browser.newPage();
-
-  await page.setRequestInterception(true);
-  page.on("request", req => {
-    const u = req.url().toLowerCase();
-    const r = req.resourceType();
-    if (["image", "stylesheet", "font", "media"].includes(r)
-      || u.includes("google-analytics")
-      || u.includes("doubleclick.net")) {
-      return req.abort();
-    }
-    req.continue();
-  });
-  await page.setCacheEnabled(true);
-  page.setDefaultNavigationTimeout(0);
 
   await page.goto(BASE_URL, { waitUntil: "networkidle0" });
   const totalPages = await page.evaluate(() => {
     const sel = document.querySelector("ul.pagination select.form-control");
     return sel ? sel.options.length : 1;
   });
+
+
   const products = [];
   for (let i = 1; i <= totalPages; i++) {
     await page.goto(`${BASE_URL}?page=${i}`, { waitUntil: "domcontentloaded" });
-    await page.waitForSelector(".product-list__item", { timeout: 60000 });
-    const cards = await page.$$eval(
-      ".product-list__item",
-      (nodes, brands) => nodes.map(card => {
-        const link = card.querySelector("h3 a");
+    await page.waitForSelector(".product-list__item");
+    const cards = await page.$$eval(".product-list__item", (nodes, brands) =>
+      nodes.map(card => {
+        const linkEl = card.querySelector("h3 a");
         const brandEl = card.querySelector("small.brand");
         const priceEl = card.querySelector(".price");
-        if (!link || !brandEl || !priceEl) return null;
+        if (!linkEl || !brandEl || !priceEl) return null;
         const brand = brandEl.innerText.trim();
         if (!brands.some(b => brand.toLowerCase().includes(b.toLowerCase())))
           return null;
         return {
-          name: link.innerText.trim(),
-          href: link.href,
+          href: linkEl.href,
+          name: linkEl.innerText.trim(),
           brand,
           publicPrice: priceEl.innerText.trim()
         };
@@ -213,54 +211,40 @@ async function scrapeAll() {
     products.push(...cards);
   }
 
+  const validProducts = products.filter(p => {
+    const raw = (p.publicPrice || "").replace(/[^\d.,]/g, "")
+    if (!raw) return false
+
+    const [intPart, decPart = ""] = raw.split(",")
+    const numInt = parseInt(intPart.replace(/\./g, ""), 10) || 0
+    const numDec = parseInt(decPart.padEnd(2, "0").slice(0, 2), 10) || 0
+
+    return !(numInt === 0 && numDec === 0)
+  })
+
   await page.goto(AUTH_URL, { waitUntil: "domcontentloaded" });
   await page.type("input[name=_username]", process.env.VYJ_USER);
   await page.type("input[name=_password]", process.env.VYJ_PASS);
   await Promise.all([
     page.click("button[type=submit]"),
-    page.waitForNavigation({ waitUntil: "networkidle0" })
+    page.waitForNavigation({ waitUntil: "networkidle0", timeout: 60000 })
   ]);
 
-  const results = [];
-  for (const item of products) {
-    const rec = {
-      name: item.name, brand: item.brand,
-      publicPrice: item.publicPrice,
-      resellerPrice: null,
-      presentacion: null,
-      sabor: null,
-      inStock: null,
-      href: item.href,
-      error: null
-    };
-    try {
-      await page.goto(item.href, { waitUntil: "domcontentloaded", timeout: 60000 });
-      await page.waitForSelector(".product-price .price", { timeout: 10000 });
-      const info = await page.evaluate(() => {
-        const txt = sel => document.querySelector(sel)?.innerText.trim() || null;
-        const prices = Array.from(document.querySelectorAll(".product-price .price"));
-        const reseller = prices.length > 1 ? prices.pop().innerText.trim() : prices[0]?.innerText.trim() || null;
-        const stock = (() => {
-          const b = document.querySelector(".primary-actions button")?.innerText.trim().toLowerCase();
-          return b ? !b.includes("sin stock") : null;
-        })();
-        return {
-          presentacion: txt('tr[data-technical-info="PRESENTACION"] td span'),
-          sabor: txt('tr[data-technical-info="SABOR"] td span'),
-          resellerPrice: reseller,
-          inStock: stock
-        };
-      });
-      Object.assign(rec, info);
-    } catch (err) {
-      rec.error = err.message;
-    }
-    results.push(rec);
+  for (const p of validProducts) {
+    await page.goto(p.href, { waitUntil: "domcontentloaded", timeout: 60000 });
+    await page.waitForSelector(".product-price .price", { timeout: 60000 });
+    const spans = await page.$$eval(
+      ".product-price .price",
+      els => els.map(el => el.innerText.trim())
+    );
+
+    p.resellerPrice = spans[1] ?? spans[0] ?? null;
   }
 
   await browser.close();
-  return results;
+  return validProducts;
 }
+
 
 async function runDailyJob() {
   const newData = await scrapeAll();
