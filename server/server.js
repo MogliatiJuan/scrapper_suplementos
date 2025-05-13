@@ -231,15 +231,26 @@ async function scrapeAll() {
   ]);
 
   for (const p of validProducts) {
-    await page.goto(p.href, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await page.waitForSelector(".product-price .price", { timeout: 60000 });
-    const spans = await page.$$eval(
-      ".product-price .price",
-      els => els.map(el => el.innerText.trim())
-    );
-
-    p.resellerPrice = spans[1] ?? spans[0] ?? null;
+    try {
+      await page.goto(p.href, {
+        waitUntil: "domcontentloaded",
+        timeout: 40000
+      });
+      await page.waitForSelector(".product-price .price", {
+        timeout: 40000
+      });
+      const spans = await page.$$eval(
+        ".product-price .price",
+        els => els.map(el => el.innerText.trim())
+      );
+      p.resellerPrice = spans[1] ?? spans[0] ?? null;
+    } catch (err) {
+      console.warn(`⚠️ Error scraping ${p.href}: ${err.message}`);
+      p.error = err.message;
+      p.resellerPrice = null;
+    }
   }
+
 
   await browser.close();
   return validProducts;
