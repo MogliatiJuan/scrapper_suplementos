@@ -189,7 +189,7 @@ async function scrapeAll() {
   const products = [];
   for (let i = 1; i <= totalPages; i++) {
     await page.goto(`${BASE_URL}?page=${i}`, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await page.waitForSelector(".product-list__item");
+    await page.waitForSelector(".product-list__item", { timeout: 60000 });
     const cards = await page.$$eval(".product-list__item", (nodes, brands) =>
       nodes.map(card => {
         const linkEl = card.querySelector("h3 a");
