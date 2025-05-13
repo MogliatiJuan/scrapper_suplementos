@@ -179,7 +179,7 @@ async function scrapeAll() {
   });
   const page = await browser.newPage();
 
-  await page.goto(BASE_URL, { waitUntil: "networkidle0" });
+  await page.goto(BASE_URL, { waitUntil: "networkidle0", timeout: 60000 });
   const totalPages = await page.evaluate(() => {
     const sel = document.querySelector("ul.pagination select.form-control");
     return sel ? sel.options.length : 1;
@@ -188,7 +188,7 @@ async function scrapeAll() {
 
   const products = [];
   for (let i = 1; i <= totalPages; i++) {
-    await page.goto(`${BASE_URL}?page=${i}`, { waitUntil: "domcontentloaded" });
+    await page.goto(`${BASE_URL}?page=${i}`, { waitUntil: "domcontentloaded", timeout: 60000 });
     await page.waitForSelector(".product-list__item");
     const cards = await page.$$eval(".product-list__item", (nodes, brands) =>
       nodes.map(card => {
@@ -222,7 +222,7 @@ async function scrapeAll() {
     return !(numInt === 0 && numDec === 0)
   })
 
-  await page.goto(AUTH_URL, { waitUntil: "domcontentloaded" });
+  await page.goto(AUTH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
   await page.type("input[name=_username]", process.env.VYJ_USER);
   await page.type("input[name=_password]", process.env.VYJ_PASS);
   await Promise.all([
