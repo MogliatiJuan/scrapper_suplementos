@@ -1407,6 +1407,20 @@
     "resellerPrice": "$ 6.347,04"
   },
   {
+    "href": "https://vyjsuplementos.ar/producto/max-force-shaker-fume-500-ml",
+    "name": "max force shaker fume 500 ml",
+    "brand": "MAX FORCE",
+    "publicPrice": "$ 3.960,00",
+    "resellerPrice": "$ 3.960,00"
+  },
+  {
+    "href": "https://vyjsuplementos.ar/producto/max-force-shaker-transparente-500-ml",
+    "name": "max force shaker transparente 500 ml",
+    "brand": "MAX FORCE",
+    "publicPrice": "$ 6.600,00",
+    "resellerPrice": "$ 6.600,00"
+  },
+  {
     "href": "https://vyjsuplementos.ar/producto/max-force-whey-protein-3-kg-chocolate",
     "name": "max force whey protein 3 kg chocolate",
     "brand": "MAX FORCE",
@@ -1831,7 +1845,8 @@
     "name": "star nutrition hydroplus recovery frutos rojos 700 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 17.757,35",
-    "resellerPrice": "$ 13.150,03"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hydroplus-recovery-naranja-700-grs",
