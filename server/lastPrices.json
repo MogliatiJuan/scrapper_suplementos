@@ -284,8 +284,7 @@
     "name": "ena sport shaker",
     "brand": "ENA SPORT",
     "publicPrice": "$ 6.120,61",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 6.120,61"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-shaker-plus-con-compartimientos",
@@ -1258,8 +1257,7 @@
     "name": "granger nutricion pancakes proteicos chocolate 400 grs",
     "brand": "GRANGER NUTRICION",
     "publicPrice": "$ 11.476,79",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 11.476,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-vainilla-400-grs",
@@ -1623,7 +1621,8 @@
     "name": "mervick race gel 12 sobres naranja",
     "brand": "MERVICK",
     "publicPrice": "$ 13.076,05",
-    "resellerPrice": "$ 13.076,05"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-shaker-3-funciones",
@@ -1637,7 +1636,8 @@
     "name": "mervick whey protein chocolate 2 lbs",
     "brand": "MERVICK",
     "publicPrice": "$ 31.582,91",
-    "resellerPrice": "$ 31.582,91"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-frutilla-2-lbs",
@@ -1763,7 +1763,8 @@
     "name": "star nutrition collagen sport sabor naranja 360 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 21.661,45",
-    "resellerPrice": "$ 21.661,45"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-collagen-whey-x-2-lbs-chocolate",
@@ -1791,7 +1792,8 @@
     "name": "star nutrition creatina monohidrato eeuu 300 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 36.687,92",
-    "resellerPrice": "$ 36.687,92"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-creatina-monohidrato-eeuu-150-grs",
@@ -1812,7 +1814,8 @@
     "name": "star nutrition doypack creatina monohidrato x 300 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 33.200,19",
-    "resellerPrice": "$ 33.200,19"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-essential-amino-x-360g-limon",
@@ -1868,7 +1871,8 @@
     "name": "star nutrition iron pack multivitaminico 383 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 100.204,79",
-    "resellerPrice": "$ 100.204,79"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-iso-whey-ripped-chocolate-2-lb",
