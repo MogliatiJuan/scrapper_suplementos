@@ -753,7 +753,8 @@
     "name": "gentech nuevas iron bar lemon cookies 12 unidades",
     "brand": "GENTECH",
     "publicPrice": "$ 13.662,00",
-    "resellerPrice": "$ 10.626,00"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gentech-nuevas-iron-bar-menta-12-unidades",
@@ -1635,24 +1636,21 @@
     "name": "mervick whey protein chocolate 2 lbs",
     "brand": "MERVICK",
     "publicPrice": "$ 31.582,91",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 22.985,34"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-frutilla-2-lbs",
     "name": "mervick whey protein frutilla 2 lbs",
     "brand": "MERVICK",
     "publicPrice": "$ 31.582,91",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 22.985,34"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-pro-performance-chocolate-2-lbs",
     "name": "mervick whey protein pro performance chocolate 2 lbs",
     "brand": "MERVICK",
     "publicPrice": "$ 31.564,19",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 22.971,71"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-pro-performance-frutilla-2-lbs",
