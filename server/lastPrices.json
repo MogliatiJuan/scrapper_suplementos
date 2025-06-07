@@ -101,14 +101,14 @@
     "href": "https://vyjsuplementos.ar/producto/ena-sport-creatina-micronizada-fruit-punch-300-grs",
     "name": "ena sport creatina micronizada fruit punch 300 grs",
     "brand": "ENA SPORT",
-    "publicPrice": "$ 36.472,34",
+    "publicPrice": "$ 32.056,20",
     "resellerPrice": "$ 25.344,23"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-creatina-micronizada-sin-sabor-300-grs",
     "name": "ena sport creatina micronizada sin sabor 300 grs",
     "brand": "ENA SPORT",
-    "publicPrice": "$ 36.472,34",
+    "publicPrice": "$ 32.056,20",
     "resellerPrice": "$ 25.344,23"
   },
   {
@@ -1957,7 +1957,8 @@
     "name": "star nutrition magnesio sabor frutos rojos 500 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 29.820,00",
-    "resellerPrice": "$ 22.082,91"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-blue-razz-270-grs",
