@@ -1145,7 +1145,8 @@
     "name": "gold nutrition shaker gold nutrition color blanco 600 cc",
     "brand": "GOLD NUTRITION",
     "publicPrice": "$ 5.184,81",
-    "resellerPrice": "$ 3.831,00"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gold-nutrition-shaker-gold-nutrition-con-compartimiento-blanco-600-cc",
@@ -1957,8 +1958,7 @@
     "name": "star nutrition magnesio sabor frutos rojos 500 grs",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 29.820,00",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 22.082,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-blue-razz-270-grs",
