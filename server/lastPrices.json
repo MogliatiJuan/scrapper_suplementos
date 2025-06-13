@@ -515,7 +515,8 @@
     "name": "ena sport whey x-pro vainilla 2 lbs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 58.444,76",
-    "resellerPrice": "$ 38.547,57"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-zma-60-caps",
@@ -1348,7 +1349,8 @@
     "name": "granger nutricion pancakes proteicos vainilla 400 grs",
     "brand": "GRANGER NUTRICION",
     "publicPrice": "$ 11.476,79",
-    "resellerPrice": "$ 8.843,88"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-vegan-chocolate-400-grs",
