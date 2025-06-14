@@ -515,8 +515,7 @@
     "name": "ena sport whey x-pro vainilla 2 lbs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 58.444,76",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 38.547,57"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-zma-60-caps",
@@ -524,531 +523,6 @@
     "brand": "ENA SPORT",
     "publicPrice": "$ 13.196,48",
     "resellerPrice": "$ 8.703,81"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/focus-roots-brain-booster-60-caps",
-    "name": "focus roots brain booster 60 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 33.462,00",
-    "resellerPrice": "$ 26.026,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-amino-7600-150-tabs",
-    "name": "gentech amino 7600 150 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 14.215,39",
-    "resellerPrice": "$ 11.056,42"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-amino-7600-325-tabs",
-    "name": "gentech amino 7600 325 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 30.433,23",
-    "resellerPrice": "$ 23.670,29"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-amino-7600-325-tabs-2x1",
-    "name": "gentech amino 7600 325 tabs (2x1)",
-    "brand": "GENTECH",
-    "publicPrice": "$ 68.949,70",
-    "resellerPrice": "$ 68.949,70"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-amino-9000-dulce-de-leche-160-tabs",
-    "name": "gentech amino 9000 dulce de leche 160 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 19.711,44",
-    "resellerPrice": "$ 15.331,12"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-amino-9000-frutilla-160-tabs",
-    "name": "gentech amino 9000 frutilla 160 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 19.711,44",
-    "resellerPrice": "$ 15.331,12"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-bcaa-4000-120-tabs",
-    "name": "gentech bcaa 4000 120 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 10.287,00",
-    "resellerPrice": "$ 8.001,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-beauty-bar-chocolate-x-10-unid",
-    "name": "gentech beauty bar chocolate x 10 unid",
-    "brand": "GENTECH",
-    "publicPrice": "$ 9.162,00",
-    "resellerPrice": "$ 7.126,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-carnitina-90-caps",
-    "name": "gentech carnitina 90 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 10.346,40",
-    "resellerPrice": "$ 8.047,20"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-cartilago-de-tiburon-60-tabs",
-    "name": "gentech cartilago de tiburon 60 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 8.599,50",
-    "resellerPrice": "$ 6.688,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-cds-frutas-tropicales-800-grs",
-    "name": "gentech cds frutas tropicales 800 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 18.484,06",
-    "resellerPrice": "$ 14.376,49"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-colageno-bebible-doypack-blueberry-360-grs",
-    "name": "gentech colageno bebible doypack blueberry 360 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 21.515,24",
-    "resellerPrice": "$ 16.734,07"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-creatina-masticable-frutilla-150-tabs",
-    "name": "gentech creatina masticable frutilla 150 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.412,00",
-    "resellerPrice": "$ 15.876,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-creatina-monohidrato-250-grs",
-    "name": "gentech creatina monohidrato 250 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 24.486,30",
-    "resellerPrice": "$ 19.044,90"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-creatina-monohidrato-500-grs",
-    "name": "gentech creatina monohidrato 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 40.943,48",
-    "resellerPrice": "$ 31.844,93"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-e-h-p-o-endurance-anana-500-grs",
-    "name": "gentech e.h.p.o. endurance anana 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 13.704,39",
-    "resellerPrice": "$ 10.658,97"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-glutamina-250-grs",
-    "name": "gentech glutamina 250 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 25.474,50",
-    "resellerPrice": "$ 19.813,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-high-definition-120-caps",
-    "name": "gentech high definition 120 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 11.130,75",
-    "resellerPrice": "$ 8.657,25"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-banana-20-unidades",
-    "name": "gentech iron bar banana 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-chocolate-20-unidades",
-    "name": "gentech iron bar chocolate 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-coco-20-unidades",
-    "name": "gentech iron bar coco 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-cookies-cream-20-unidades",
-    "name": "gentech iron bar cookies & cream 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-dulce-de-leche-20-unidades",
-    "name": "gentech iron bar dulce de leche 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-frutilla-20-unidades",
-    "name": "gentech iron bar frutilla 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-lemon-cookies-20-unidades",
-    "name": "gentech iron bar lemon cookies 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-limon-20-unidades",
-    "name": "gentech iron bar limon 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-bar-menta-20-unidades",
-    "name": "gentech iron bar menta 20 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 31.212,00",
-    "resellerPrice": "$ 24.276,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-full-recovery-doypack-frutos-del-bosque-500-grs",
-    "name": "gentech iron full recovery doypack frutos del bosque 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 11.130,75",
-    "resellerPrice": "$ 8.657,25"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-gel-con-cafeina-frutos-del-bosque-24-un",
-    "name": "gentech iron gel con cafeina frutos del bosque 24 un",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.344,50",
-    "resellerPrice": "$ 15.823,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-iron-gel-con-cafeina-lima-limon-24-un",
-    "name": "gentech iron gel con cafeina lima limon 24 un",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.344,50",
-    "resellerPrice": "$ 15.823,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-l-carnitine-liquid-500-cc",
-    "name": "gentech l-carnitine liquid 500 cc",
-    "brand": "GENTECH",
-    "publicPrice": "$ 10.342,82",
-    "resellerPrice": "$ 8.044,41"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-lipolitic-cla-1000-60-caps",
-    "name": "gentech lipolitic cla 1000 60 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 9.766,13",
-    "resellerPrice": "$ 7.595,88"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-low-carb-keto-crackers-x-33-grs-pizza",
-    "name": "gentech low carb keto crackers x 33 grs pizza",
-    "brand": "GENTECH",
-    "publicPrice": "$ 2.862,00",
-    "resellerPrice": "$ 2.862,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-banana-1250-grs",
-    "name": "gentech maxi gain banana 1250 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.572,16",
-    "resellerPrice": "$ 16.000,57"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-banana-750-grs",
-    "name": "gentech maxi gain banana 750 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 13.999,50",
-    "resellerPrice": "$ 10.888,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-chocolate-1250-grs",
-    "name": "gentech maxi gain chocolate 1250 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.572,16",
-    "resellerPrice": "$ 16.000,57"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-chocolate-750-grs",
-    "name": "gentech maxi gain chocolate 750 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 13.999,50",
-    "resellerPrice": "$ 10.888,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-frutilla-1250-grs",
-    "name": "gentech maxi gain frutilla 1250 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.572,16",
-    "resellerPrice": "$ 16.000,57"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-frutilla-750-grs",
-    "name": "gentech maxi gain frutilla 750 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 13.999,50",
-    "resellerPrice": "$ 10.888,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-vainilla-1250-grs",
-    "name": "gentech maxi gain vainilla 1250 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.572,16",
-    "resellerPrice": "$ 16.000,57"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-vainilla-750-grs",
-    "name": "gentech maxi gain vainilla 750 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 13.999,50",
-    "resellerPrice": "$ 10.888,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-multivitamin-nueva-presentacion-60-tabs",
-    "name": "gentech multivitamin nueva presentacion 60 tabs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 8.596,13",
-    "resellerPrice": "$ 6.685,88"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-nitric-oxide-90-caps",
-    "name": "gentech nitric oxide 90 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 10.411,33",
-    "resellerPrice": "$ 8.097,70"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-nuevas-iron-bar-lemon-cookies-12-unidades",
-    "name": "gentech nuevas iron bar lemon cookies 12 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 19.197,00",
-    "resellerPrice": "$ 14.931,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-nuevas-iron-bar-menta-12-unidades",
-    "name": "gentech nuevas iron bar menta 12 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 19.197,00",
-    "resellerPrice": "$ 14.931,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-nuevas-whey-protein-7900-908-gr-chocolate",
-    "name": "gentech nuevas whey protein 7900 908 gr chocolate",
-    "brand": "GENTECH",
-    "publicPrice": "$ 36.766,01",
-    "resellerPrice": "$ 28.595,78"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-nuevas-whey-protein-7900-908-gr-dulce-de-leche",
-    "name": "gentech nuevas whey protein 7900 908 gr dulce de leche",
-    "brand": "GENTECH",
-    "publicPrice": "$ 36.766,01",
-    "resellerPrice": "$ 28.595,78"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-nuevas-whey-protein-7900-908-gr-vainilla",
-    "name": "gentech nuevas whey protein 7900 908 gr vainilla",
-    "brand": "GENTECH",
-    "publicPrice": "$ 36.766,01",
-    "resellerPrice": "$ 28.595,78"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-omega-3-epa-dha-60-caps",
-    "name": "gentech omega 3 epa & dha 60 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 25.474,50",
-    "resellerPrice": "$ 19.813,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-one-week-sobres-de-proteinas-chocolate-175-grs",
-    "name": "gentech one week - sobres de proteinas chocolate 175 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 7.940,70",
-    "resellerPrice": "$ 6.176,10"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-one-week-sobres-de-proteinas-vainilla-175-grs",
-    "name": "gentech one week - sobres de proteinas vainilla 175 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 7.940,70",
-    "resellerPrice": "$ 6.176,10"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-pre-workout-wild-sabor-frutos-del-bosque-400-grs",
-    "name": "gentech pre-workout wild sabor frutos del bosque 400 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 30.537,00",
-    "resellerPrice": "$ 23.751,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-protein-bar-low-carb-choco-brownie-10-unidades",
-    "name": "gentech protein bar low carb choco brownie 10 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 23.315,63",
-    "resellerPrice": "$ 18.134,38"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-protein-bar-low-carb-peanut-butter-10-unidades",
-    "name": "gentech protein bar low carb peanut butter 10 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 23.315,63",
-    "resellerPrice": "$ 18.134,38"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-protein-bar-low-carb-raspberry-crunch-10-unidades",
-    "name": "gentech protein bar low carb raspberry crunch 10 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 23.315,63",
-    "resellerPrice": "$ 18.134,38"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-protein-shake-plant-based-cacao-500-grs",
-    "name": "gentech protein shake plant based cacao 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 18.627,75",
-    "resellerPrice": "$ 14.488,25"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-ripped-max-ii-60-caps",
-    "name": "gentech ripped max ii 60 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 9.286,92",
-    "resellerPrice": "$ 7.223,16"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-shaker-negro",
-    "name": "gentech shaker negro",
-    "brand": "GENTECH",
-    "publicPrice": "$ 9.814,50",
-    "resellerPrice": "$ 7.633,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-shaker-rosa",
-    "name": "gentech shaker rosa",
-    "brand": "GENTECH",
-    "publicPrice": "$ 9.814,50",
-    "resellerPrice": "$ 7.633,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-tnt-frutos-del-bosque-500-grs",
-    "name": "gentech tnt frutos del bosque 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 16.193,25",
-    "resellerPrice": "$ 12.594,75"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-tx3-black-cuts-pre-workout-fat-burner-60-caps",
-    "name": "gentech tx3 black cuts - pre workout fat burner 60 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 16.193,25",
-    "resellerPrice": "$ 12.594,75"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-veggie-bar-choco-brownie-10-unidades",
-    "name": "gentech veggie bar choco brownie 10 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 18.627,75",
-    "resellerPrice": "$ 14.488,25"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-veggie-bar-peanut-butter-10-unidades",
-    "name": "gentech veggie bar peanut butter 10 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 18.627,75",
-    "resellerPrice": "$ 14.488,25"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-volcano-extreme-frutos-del-bosque-1200-grs",
-    "name": "gentech volcano extreme frutos del bosque 1200 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 28.043,39",
-    "resellerPrice": "$ 21.811,52"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-banana-1-kg",
-    "name": "gentech whey protein - 7900 afa banana 1 kg",
-    "brand": "GENTECH",
-    "publicPrice": "$ 35.102,18",
-    "resellerPrice": "$ 27.301,70"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-banana-500-grs",
-    "name": "gentech whey protein - 7900 afa banana 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.432,25",
-    "resellerPrice": "$ 15.891,75"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-chocolate-1-kg",
-    "name": "gentech whey protein - 7900 afa chocolate 1 kg",
-    "brand": "GENTECH",
-    "publicPrice": "$ 35.102,18",
-    "resellerPrice": "$ 27.301,70"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-chocolate-500-grs",
-    "name": "gentech whey protein - 7900 afa chocolate 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.432,25",
-    "resellerPrice": "$ 15.891,75"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-frutilla-1-kg",
-    "name": "gentech whey protein - 7900 afa frutilla 1 kg",
-    "brand": "GENTECH",
-    "publicPrice": "$ 35.102,18",
-    "resellerPrice": "$ 27.301,70"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-frutilla-500-grs",
-    "name": "gentech whey protein - 7900 afa frutilla 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.432,25",
-    "resellerPrice": "$ 15.891,75"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-vainilla-1-kg",
-    "name": "gentech whey protein - 7900 afa vainilla 1 kg",
-    "brand": "GENTECH",
-    "publicPrice": "$ 35.102,18",
-    "resellerPrice": "$ 27.301,70"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-7900-afa-vainilla-500-grs",
-    "name": "gentech whey protein - 7900 afa vainilla 500 grs",
-    "brand": "GENTECH",
-    "publicPrice": "$ 20.432,25",
-    "resellerPrice": "$ 15.891,75"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-monster-size-3000-grs-chocolate",
-    "name": "gentech whey protein monster size 3000 grs chocolate",
-    "brand": "GENTECH",
-    "publicPrice": "$ 92.299,50",
-    "resellerPrice": "$ 71.788,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-whey-protein-monster-size-3000-grs-vainilla",
-    "name": "gentech whey protein monster size 3000 grs vainilla",
-    "brand": "GENTECH",
-    "publicPrice": "$ 92.299,50",
-    "resellerPrice": "$ 71.788,50"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/gentech-zma-recovery-x-60-caps",
-    "name": "gentech zma recovery x 60 caps",
-    "brand": "GENTECH",
-    "publicPrice": "$ 9.612,00",
-    "resellerPrice": "$ 7.476,00"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gold-nutrition-100-whey-protein-chocolate-2-lbs",
@@ -1349,8 +823,7 @@
     "name": "granger nutricion pancakes proteicos vainilla 400 grs",
     "brand": "GRANGER NUTRICION",
     "publicPrice": "$ 11.476,79",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 8.843,88"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-vegan-chocolate-400-grs",
@@ -1559,239 +1032,225 @@
     "href": "https://vyjsuplementos.ar/producto/mervick-colageno-sport-sabor-frutos-rojos-330-grs",
     "name": "mervick colageno sport sabor frutos rojos 330 grs",
     "brand": "MERVICK",
-    "publicPrice": "$ 25.266,73",
-    "resellerPrice": "$ 18.388,56"
+    "publicPrice": "$ 27.909,00",
+    "resellerPrice": "$ 20.311,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-colageno-sport-sabor-naranja-330-grs",
     "name": "mervick colageno sport sabor naranja 330 grs",
     "brand": "MERVICK",
-    "publicPrice": "$ 25.266,73",
-    "resellerPrice": "$ 18.388,56"
+    "publicPrice": "$ 27.909,00",
+    "resellerPrice": "$ 20.311,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-creatina-300-grs",
     "name": "mervick creatina 300 grs",
     "brand": "MERVICK",
-    "publicPrice": "$ 22.658,17",
-    "resellerPrice": "$ 16.490,11"
+    "publicPrice": "$ 31.656,00",
+    "resellerPrice": "$ 23.038,86"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-creatine-premium-glucosa-creatina-glutamina-taurina-1-kgs",
     "name": "mervick creatine premium (glucosa, creatina, glutamina, taurina) 1 kgs",
     "brand": "MERVICK",
-    "publicPrice": "$ 22.763,65",
-    "resellerPrice": "$ 16.566,87"
+    "publicPrice": "$ 31.804,00",
+    "resellerPrice": "$ 23.146,43"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-energy-gel-con-cafeina-12-sobres-frutos-rojos",
     "name": "mervick energy gel con cafeina 12 sobres frutos rojos",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.630,05",
-    "resellerPrice": "$ 9.919,65"
+    "publicPrice": "$ 15.047,00",
+    "resellerPrice": "$ 10.951,21"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-energy-gel-con-cafeina-12-sobres-limon",
     "name": "mervick energy gel con cafeina 12 sobres limon",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.630,05",
-    "resellerPrice": "$ 9.919,65"
+    "publicPrice": "$ 15.047,00",
+    "resellerPrice": "$ 10.951,21"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-energy-gel-con-cafeina-12-sobres-manzana",
     "name": "mervick energy gel con cafeina 12 sobres manzana",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.630,05",
-    "resellerPrice": "$ 9.919,65"
+    "publicPrice": "$ 15.047,00",
+    "resellerPrice": "$ 10.951,21"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-energy-gel-con-cafeina-12-sobres-naranja",
     "name": "mervick energy gel con cafeina 12 sobres naranja",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.630,05",
-    "resellerPrice": "$ 9.919,65"
+    "publicPrice": "$ 15.047,00",
+    "resellerPrice": "$ 10.951,21"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-low-carb-protein-bar-chocolate-coffe-12-unidades",
     "name": "mervick low carb protein bar chocolate coffe 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 19.680,53",
-    "resellerPrice": "$ 14.323,05"
+    "publicPrice": "$ 22.934,00",
+    "resellerPrice": "$ 16.690,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-low-carb-protein-bar-frutos-rojos-12-unidades",
     "name": "mervick low carb protein bar frutos rojos 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 19.680,53",
-    "resellerPrice": "$ 14.323,05"
+    "publicPrice": "$ 22.934,00",
+    "resellerPrice": "$ 16.690,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-46-grs-banana-12-unidades",
     "name": "mervick protein bar 46 grs banana 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.967,68",
-    "resellerPrice": "$ 10.165,36"
+    "publicPrice": "$ 17.075,00",
+    "resellerPrice": "$ 12.426,56"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-46-grs-dark-chocolate-12-unidades",
     "name": "mervick protein bar 46 grs dark chocolate 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.967,68",
-    "resellerPrice": "$ 10.165,36"
+    "publicPrice": "$ 17.075,00",
+    "resellerPrice": "$ 12.426,56"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-46-grs-frutos-rojos-12-unidades",
     "name": "mervick protein bar 46 grs frutos rojos 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.967,68",
-    "resellerPrice": "$ 10.165,36"
+    "publicPrice": "$ 17.075,00",
+    "resellerPrice": "$ 12.426,56"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-46-grs-lemon-pie-12-unidades",
     "name": "mervick protein bar 46 grs lemon pie 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.967,68",
-    "resellerPrice": "$ 10.165,36"
+    "publicPrice": "$ 17.075,00",
+    "resellerPrice": "$ 12.426,56"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-65-grs-banana-12-unidades",
     "name": "mervick protein bar 65 grs banana 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 17.122,59",
-    "resellerPrice": "$ 12.461,43"
+    "publicPrice": "$ 21.813,00",
+    "resellerPrice": "$ 15.875,33"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-65-grs-chocolate-12-unidades",
     "name": "mervick protein bar 65 grs chocolate 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 17.122,59",
-    "resellerPrice": "$ 12.461,43"
+    "publicPrice": "$ 21.813,00",
+    "resellerPrice": "$ 15.875,33"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-65-grs-frambuesa-12-unidades",
     "name": "mervick protein bar 65 grs frambuesa 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 17.122,59",
-    "resellerPrice": "$ 12.461,43"
+    "publicPrice": "$ 21.813,00",
+    "resellerPrice": "$ 15.875,33"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-protein-bar-65-grs-limon-12-unidades",
     "name": "mervick protein bar 65 grs limon 12 unidades",
     "brand": "MERVICK",
-    "publicPrice": "$ 17.122,59",
-    "resellerPrice": "$ 12.461,43"
+    "publicPrice": "$ 21.813,00",
+    "resellerPrice": "$ 15.875,33"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-race-gel-12-sobres-frutos-rojos",
     "name": "mervick race gel 12 sobres frutos rojos",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.076,05",
-    "resellerPrice": "$ 9.516,45"
+    "publicPrice": "$ 14.436,00",
+    "resellerPrice": "$ 10.505,94"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-race-gel-12-sobres-limon",
     "name": "mervick race gel 12 sobres limon",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.076,05",
-    "resellerPrice": "$ 9.516,45"
+    "publicPrice": "$ 14.436,00",
+    "resellerPrice": "$ 10.505,94"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-race-gel-12-sobres-manzana",
     "name": "mervick race gel 12 sobres manzana",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.076,05",
-    "resellerPrice": "$ 9.516,45"
+    "publicPrice": "$ 14.436,00",
+    "resellerPrice": "$ 10.505,94"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-race-gel-12-sobres-naranja",
     "name": "mervick race gel 12 sobres naranja",
     "brand": "MERVICK",
-    "publicPrice": "$ 13.076,05",
-    "resellerPrice": "$ 9.516,45"
+    "publicPrice": "$ 14.436,00",
+    "resellerPrice": "$ 10.505,94"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-shaker-3-funciones",
     "name": "mervick shaker 3 funciones",
     "brand": "MERVICK",
-    "publicPrice": "$ 7.269,62",
-    "resellerPrice": "$ 5.290,66"
+    "publicPrice": "$ 8.019,00",
+    "resellerPrice": "$ 5.836,08"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-chocolate-2-lbs",
     "name": "mervick whey protein chocolate 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 31.582,91",
-    "resellerPrice": "$ 22.985,34"
+    "publicPrice": "$ 42.183,00",
+    "resellerPrice": "$ 30.699,83"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-frutilla-2-lbs",
     "name": "mervick whey protein frutilla 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 31.582,91",
-    "resellerPrice": "$ 22.985,34"
+    "publicPrice": "$ 42.183,00",
+    "resellerPrice": "$ 30.699,83"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-pro-performance-chocolate-2-lbs",
     "name": "mervick whey protein pro performance chocolate 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 31.564,19",
-    "resellerPrice": "$ 22.971,71"
+    "publicPrice": "$ 38.340,00",
+    "resellerPrice": "$ 27.903,00"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-pro-performance-frutilla-2-lbs",
     "name": "mervick whey protein pro performance frutilla 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 31.564,19",
-    "resellerPrice": "$ 22.971,71"
+    "publicPrice": "$ 38.340,00",
+    "resellerPrice": "$ 27.903,00"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-pro-performance-vainilla-2-lbs",
     "name": "mervick whey protein pro performance vainilla 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 31.564,19",
-    "resellerPrice": "$ 22.971,71"
+    "publicPrice": "$ 38.340,00",
+    "resellerPrice": "$ 27.903,00"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-real-blend-concentrate-hydrolized-chocolate-2-lbs",
     "name": "mervick whey protein real blend concentrate + hydrolized chocolate 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 33.521,51",
-    "resellerPrice": "$ 24.396,20"
+    "publicPrice": "$ 44.775,00",
+    "resellerPrice": "$ 32.586,54"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-real-blend-concentrate-hydrolized-frutos-rojos-2-lbs",
     "name": "mervick whey protein real blend concentrate + hydrolized frutos rojos 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 33.521,51",
-    "resellerPrice": "$ 24.396,20"
+    "publicPrice": "$ 44.775,00",
+    "resellerPrice": "$ 32.586,54"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-real-blend-concentrate-hydrolized-vainilla-2-lbs",
     "name": "mervick whey protein real blend concentrate + hydrolized vainilla 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 33.521,51",
-    "resellerPrice": "$ 24.396,20"
+    "publicPrice": "$ 44.775,00",
+    "resellerPrice": "$ 32.586,54"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/mervick-whey-protein-vainilla-2-lbs",
     "name": "mervick whey protein vainilla 2 lbs",
     "brand": "MERVICK",
-    "publicPrice": "$ 31.582,91",
-    "resellerPrice": "$ 22.985,34"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/sex-roots-barras-testo-booster-cacao-10-unidades",
-    "name": "sex roots barras testo booster cacao 10 unidades",
-    "brand": "GENTECH",
-    "publicPrice": "$ 30.771,00",
-    "resellerPrice": "$ 23.933,00"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/sex-roots-testo-booster-60-comp",
-    "name": "sex roots testo booster 60 comp",
-    "brand": "GENTECH",
-    "publicPrice": "$ 27.405,00",
-    "resellerPrice": "$ 21.315,00"
+    "publicPrice": "$ 42.183,00",
+    "resellerPrice": "$ 30.699,83"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-all-in-one-vitamin-60-comp",
