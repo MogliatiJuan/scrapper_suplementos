@@ -319,7 +319,8 @@
     "name": "ena sport protein bar chocolate 16 unidades",
     "brand": "ENA SPORT",
     "publicPrice": "$ 29.955,10",
-    "resellerPrice": "$ 19.757,05"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-protein-bar-frutilla-16-unidades",
