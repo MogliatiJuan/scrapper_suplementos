@@ -319,8 +319,7 @@
     "name": "ena sport protein bar chocolate 16 unidades",
     "brand": "ENA SPORT",
     "publicPrice": "$ 29.955,10",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 19.757,05"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-protein-bar-frutilla-16-unidades",
@@ -2007,7 +2006,8 @@
     "name": "whey protein true made",
     "brand": "ENA SPORT",
     "publicPrice": "$ 27.999,94",
-    "resellerPrice": "$ 18.467,51"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/whey-protein-true-made-6",
