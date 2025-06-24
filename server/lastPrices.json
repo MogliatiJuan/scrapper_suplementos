@@ -781,7 +781,8 @@
     "name": "gentech maxi gain vainilla 1250 grs",
     "brand": "GENTECH",
     "publicPrice": "$ 20.572,16",
-    "resellerPrice": "$ 18.272,06"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gentech-maxi-gain-vainilla-750-grs",
