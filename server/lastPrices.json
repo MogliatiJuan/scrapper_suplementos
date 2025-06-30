@@ -389,7 +389,8 @@
     "name": "ena sport whey protein true made banana 2,05 lbs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 49.413,72",
-    "resellerPrice": "$ 32.591,10"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-whey-protein-true-made-chocolate-2-05-lbs",
@@ -1033,7 +1034,8 @@
     "name": "gold nutrition b-complex 60 caps",
     "brand": "GOLD NUTRITION",
     "publicPrice": "$ 8.849,25",
-    "resellerPrice": "$ 6.538,61"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gold-nutrition-bcaa-2000-120-tabletas",
@@ -1246,8 +1248,8 @@
     "resellerPrice": "$ 8.479,30"
   },
   {
-    "href": "https://vyjsuplementos.ar/producto/granger-nutricion-keto-pancakes-almendras-y-coco-sabor-vainilla-400-grs",
-    "name": "granger nutricion keto pancakes almendras y coco sabor vainilla 400 grs",
+    "href": "https://vyjsuplementos.ar/producto/granger-nutricion-keto-pancakes-almendras-y-coco-sabor-vainilla-200-grs",
+    "name": "granger nutricion keto pancakes almendras y coco sabor vainilla 200 grs",
     "brand": "GRANGER NUTRICION",
     "publicPrice": "$ 12.661,54",
     "resellerPrice": "$ 9.214,79"
