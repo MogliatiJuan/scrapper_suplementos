@@ -389,8 +389,7 @@
     "name": "ena sport whey protein true made banana 2,05 lbs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 49.413,72",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 32.591,10"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/ena-sport-whey-protein-true-made-chocolate-2-05-lbs",
@@ -1034,8 +1033,7 @@
     "name": "gold nutrition b-complex 60 caps",
     "brand": "GOLD NUTRITION",
     "publicPrice": "$ 8.849,25",
-    "error": "Navigation timeout of 40000 ms exceeded",
-    "resellerPrice": null
+    "resellerPrice": "$ 6.538,61"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gold-nutrition-bcaa-2000-120-tabletas",
@@ -1230,8 +1228,8 @@
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-chia-puddings-cacao-y-coco-300-grs",
     "name": "granger nutricion chia puddings cacao y coco 300 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 10.061,01",
-    "resellerPrice": "$ 7.322,18"
+    "publicPrice": "$ 10.662,14",
+    "resellerPrice": "$ 7.759,67"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-citrato-de-magnesio-100-puro-144-grs",
@@ -1241,18 +1239,25 @@
     "resellerPrice": "$ 8.851,80"
   },
   {
+    "href": "https://vyjsuplementos.ar/producto/granger-nutricion-colageno-beauty-naranja-250-grs",
+    "name": "granger nutricion colageno beauty naranja 250 grs",
+    "brand": "GRANGER NUTRICION",
+    "publicPrice": "$ 27.162,67",
+    "resellerPrice": "$ 19.768,38"
+  },
+  {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-cupcakes-proteicos-chocolate-360-grs",
     "name": "granger nutricion cupcakes proteicos chocolate 360 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 11.650,95",
-    "resellerPrice": "$ 8.479,30"
+    "publicPrice": "$ 12.661,54",
+    "resellerPrice": "$ 9.214,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-keto-pancakes-almendras-y-coco-sabor-vainilla-200-grs",
     "name": "granger nutricion keto pancakes almendras y coco sabor vainilla 200 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 12.661,54",
-    "resellerPrice": "$ 9.214,79"
+    "publicPrice": "$ 8.662,73",
+    "resellerPrice": "$ 6.304,55"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-levadura-nutricional-100-pura-160-grs",
@@ -1262,46 +1267,67 @@
     "resellerPrice": "$ 9.579,36"
   },
   {
+    "href": "https://vyjsuplementos.ar/producto/granger-nutricion-omelette-proteico-sabor-jamon-y-queso-245-grs",
+    "name": "granger nutricion omelette proteico sabor jamon y queso 245 grs",
+    "brand": "GRANGER NUTRICION",
+    "publicPrice": "$ 14.660,95",
+    "resellerPrice": "$ 10.669,91"
+  },
+  {
+    "href": "https://vyjsuplementos.ar/producto/granger-nutricion-omelette-proteico-sabor-mix-de-verduras-245-grs",
+    "name": "granger nutricion omelette proteico sabor mix de verduras 245 grs",
+    "brand": "GRANGER NUTRICION",
+    "publicPrice": "$ 14.660,95",
+    "resellerPrice": "$ 10.669,91"
+  },
+  {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-chocolate-400-grs",
     "name": "granger nutricion pancakes proteicos chocolate 400 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 12.151,89",
-    "resellerPrice": "$ 8.843,88"
+    "publicPrice": "$ 12.661,54",
+    "resellerPrice": "$ 9.214,79"
+  },
+  {
+    "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-sabor-queso-300-grs",
+    "name": "granger nutricion pancakes proteicos sabor queso 300 grs",
+    "brand": "GRANGER NUTRICION",
+    "publicPrice": "$ 12.661,54",
+    "resellerPrice": "$ 9.214,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-vainilla-400-grs",
     "name": "granger nutricion pancakes proteicos vainilla 400 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 12.151,89",
-    "resellerPrice": "$ 8.843,88"
+    "publicPrice": "$ 12.661,54",
+    "resellerPrice": "$ 9.214,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-pancakes-proteicos-vegan-chocolate-400-grs",
     "name": "granger nutricion pancakes proteicos vegan chocolate 400 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 13.062,29",
-    "resellerPrice": "$ 9.506,45"
+    "publicPrice": "$ 13.661,24",
+    "resellerPrice": "$ 9.942,35"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-proteina-de-arveja-frutilla-750-grs",
     "name": "granger nutricion proteina de arveja frutilla 750 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 31.152,76",
-    "resellerPrice": "$ 22.672,29"
+    "publicPrice": "$ 28.162,37",
+    "resellerPrice": "$ 20.495,95"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-proteina-de-arveja-natural-750-grs",
     "name": "granger nutricion proteina de arveja natural 750 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 31.152,76",
-    "resellerPrice": "$ 22.672,29"
+    "publicPrice": "$ 28.162,37",
+    "resellerPrice": "$ 20.495,95"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-proteina-de-arveja-vainilla-750-grs",
     "name": "granger nutricion proteina de arveja vainilla 750 grs",
     "brand": "GRANGER NUTRICION",
-    "publicPrice": "$ 31.152,76",
-    "resellerPrice": "$ 22.672,29"
+    "publicPrice": "$ 28.162,37",
+    "resellerPrice": "$ 20.495,95"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/granger-nutricion-proteina-de-huevo-hidrolizada-chocolate-750-grs",
@@ -1720,57 +1746,57 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-all-in-one-vitamin-60-comp",
     "name": "star nutrition all-in-one vitamin 60 comp",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 20.355,46",
-    "resellerPrice": "$ 15.074,04"
+    "publicPrice": "$ 19.167,87",
+    "resellerPrice": "$ 14.194,59"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-bcaa-2000-120-caps",
     "name": "star nutrition bcaa 2000 120 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 17.021,36",
-    "resellerPrice": "$ 12.605,01"
+    "publicPrice": "$ 16.029,90",
+    "resellerPrice": "$ 11.870,79"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-beta-alanina-300-grs",
     "name": "star nutrition beta alanina 300 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 26.593,45",
-    "resellerPrice": "$ 19.693,53"
+    "publicPrice": "$ 25.038,92",
+    "resellerPrice": "$ 18.542,34"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-caffeine-200-30-caps",
     "name": "star nutrition caffeine 200 30 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 7.925,57",
-    "resellerPrice": "$ 5.869,21"
+    "publicPrice": "$ 7.469,16",
+    "resellerPrice": "$ 5.531,21"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-cla-1000-90-caps",
     "name": "star nutrition cla 1000 90 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 23.121,07",
-    "resellerPrice": "$ 17.122,09"
+    "publicPrice": "$ 21.770,80",
+    "resellerPrice": "$ 16.122,16"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-collagen-limon-210-grs",
     "name": "star nutrition collagen limon 210 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 19.894,52",
-    "resellerPrice": "$ 14.732,70"
+    "publicPrice": "$ 18.734,05",
+    "resellerPrice": "$ 13.873,32"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-collagen-plus-sabor-limon-360-grs",
     "name": "star nutrition collagen plus sabor limon 360 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 21.661,44",
-    "resellerPrice": "$ 16.041,18"
+    "publicPrice": "$ 20.397,03",
+    "resellerPrice": "$ 15.104,83"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-collagen-sport-sabor-naranja-360-grs",
     "name": "star nutrition collagen sport sabor naranja 360 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 21.661,44",
-    "resellerPrice": "$ 16.041,18"
+    "publicPrice": "$ 20.397,03",
+    "resellerPrice": "$ 15.104,83"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-collagen-whey-x-2-lbs-chocolate",
@@ -1790,113 +1816,113 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-creatina-monohidrato-eeuu-1-kg",
     "name": "star nutrition creatina monohidrato eeuu 1 kg",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 99.958,96",
-    "resellerPrice": "$ 74.023,66"
+    "publicPrice": "$ 94.088,81",
+    "resellerPrice": "$ 69.676,58"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-creatina-monohidrato-eeuu-300-grs",
     "name": "star nutrition creatina monohidrato eeuu 300 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 36.687,93",
-    "resellerPrice": "$ 27.168,90"
+    "publicPrice": "$ 34.539,61",
+    "resellerPrice": "$ 25.577,98"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-creatina-monohidrato-eeuu-150-grs",
     "name": "star nutrition creatina monohidrato eeuu 150 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 19.341,40",
-    "resellerPrice": "$ 14.323,09"
+    "publicPrice": "$ 18.213,47",
+    "resellerPrice": "$ 13.487,81"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-creatina-monohidrato-eeuu-500-grs",
     "name": "star nutrition creatina monohidrato eeuu 500 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 55.217,52",
-    "resellerPrice": "$ 40.890,81"
+    "publicPrice": "$ 51.979,22",
+    "resellerPrice": "$ 38.492,72"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-doypack-creatina-monohidrato-x-300-grs",
     "name": "star nutrition doypack creatina monohidrato x 300 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 33.200,18",
-    "resellerPrice": "$ 24.586,08"
+    "publicPrice": "$ 31.257,03",
+    "resellerPrice": "$ 23.147,10"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-essential-amino-x-360g-limon",
     "name": "star nutrition essential amino x 360g limon",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.842,88",
-    "resellerPrice": "$ 26.543,11"
+    "publicPrice": "$ 33.744,27",
+    "resellerPrice": "$ 24.989,00"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hmb-180-caps",
     "name": "star nutrition hmb 180 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 26.793,19",
-    "resellerPrice": "$ 19.841,44"
+    "publicPrice": "$ 25.226,91",
+    "resellerPrice": "$ 18.681,55"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hydroplus-endurance-blue-razz-700-grs",
     "name": "star nutrition hydroplus endurance blue razz 700 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 17.482,30",
-    "resellerPrice": "$ 12.946,35"
+    "publicPrice": "$ 16.463,72",
+    "resellerPrice": "$ 12.192,05"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hydroplus-endurance-lima-limon-700-grs",
     "name": "star nutrition hydroplus endurance lima limon 700 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 17.482,30",
-    "resellerPrice": "$ 12.946,35"
+    "publicPrice": "$ 16.463,72",
+    "resellerPrice": "$ 12.192,05"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hydroplus-endurance-naranja-700-grs",
     "name": "star nutrition hydroplus endurance naranja 700 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 17.482,30",
-    "resellerPrice": "$ 12.946,35"
+    "publicPrice": "$ 16.463,72",
+    "resellerPrice": "$ 12.192,05"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hydroplus-recovery-frutos-rojos-700-grs",
     "name": "star nutrition hydroplus recovery frutos rojos 700 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 17.757,35",
-    "resellerPrice": "$ 13.150,03"
+    "publicPrice": "$ 16.722,59",
+    "resellerPrice": "$ 12.383,76"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hydroplus-recovery-naranja-700-grs",
     "name": "star nutrition hydroplus recovery naranja 700 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 17.757,35",
-    "resellerPrice": "$ 13.150,03"
+    "publicPrice": "$ 16.722,59",
+    "resellerPrice": "$ 12.383,76"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-iron-pack-multivitaminico-383-grs",
     "name": "star nutrition iron pack multivitaminico 383 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 100.204,79",
-    "resellerPrice": "$ 74.205,71"
+    "publicPrice": "$ 94.320,18",
+    "resellerPrice": "$ 69.847,92"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-iso-whey-ripped-chocolate-2-lb",
     "name": "star nutrition iso whey ripped chocolate 2 lb",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 43.038,55",
-    "resellerPrice": "$ 31.871,79"
+    "publicPrice": "$ 40.516,66",
+    "resellerPrice": "$ 30.004,23"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-iso-whey-ripped-vainilla-2-lb",
     "name": "star nutrition iso whey ripped vainilla 2 lb",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 43.038,55",
-    "resellerPrice": "$ 31.871,79"
+    "publicPrice": "$ 40.516,66",
+    "resellerPrice": "$ 30.004,23"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-just-carbs-1-kg",
     "name": "star nutrition just carbs 1 kg",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 16.990,63",
-    "resellerPrice": "$ 12.582,25"
+    "publicPrice": "$ 16.000,98",
+    "resellerPrice": "$ 11.849,37"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-just-plant-2-lb",
@@ -1916,141 +1942,141 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-l-arginina-gh-150-grs",
     "name": "star nutrition l - arginina gh 150 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 16.667,98",
-    "resellerPrice": "$ 12.343,31"
+    "publicPrice": "$ 15.697,30",
+    "resellerPrice": "$ 11.624,49"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-l-carnitine-60-comp",
     "name": "star nutrition l-carnitine 60 comp",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 15.116,16",
-    "resellerPrice": "$ 11.194,13"
+    "publicPrice": "$ 14.236,77",
+    "resellerPrice": "$ 10.542,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-l-citruline-malate-42-servicios-300-gms",
     "name": "star nutrition l-citruline malate (42 servicios) 300 gms",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 56.308,40",
-    "resellerPrice": "$ 41.698,65"
+    "publicPrice": "$ 53.005,93",
+    "resellerPrice": "$ 39.253,04"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-l-glutamine-300-grs",
     "name": "star nutrition l-glutamine 300 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 30.403,84",
-    "resellerPrice": "$ 22.515,28"
+    "publicPrice": "$ 28.625,18",
+    "resellerPrice": "$ 21.198,10"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-l-glutamine-x-150-grs",
     "name": "star nutrition l-glutamine x 150 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 18.311,98",
-    "resellerPrice": "$ 13.560,76"
+    "publicPrice": "$ 17.244,60",
+    "resellerPrice": "$ 12.770,32"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-magnesio-500-60-caps",
     "name": "star nutrition magnesio 500 60 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 14.901,06",
-    "resellerPrice": "$ 11.034,84"
+    "publicPrice": "$ 14.034,32",
+    "resellerPrice": "$ 10.392,98"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-magnesio-neutro-500-grs",
     "name": "star nutrition magnesio neutro 500 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.819,99",
-    "resellerPrice": "$ 22.082,91"
+    "publicPrice": "$ 28.075,67",
+    "resellerPrice": "$ 20.791,17"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-magnesio-sabor-frutos-rojos-500-grs",
     "name": "star nutrition magnesio sabor frutos rojos 500 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.819,99",
-    "resellerPrice": "$ 22.082,91"
+    "publicPrice": "$ 28.075,67",
+    "resellerPrice": "$ 20.791,17"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-blue-razz-270-grs",
     "name": "star nutrition mtor bcaa blue razz 270 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.359,06",
-    "resellerPrice": "$ 21.741,57"
+    "publicPrice": "$ 27.641,85",
+    "resellerPrice": "$ 20.469,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-fruit-punch-270-grs",
     "name": "star nutrition mtor bcaa fruit punch 270 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.359,06",
-    "resellerPrice": "$ 21.741,57"
+    "publicPrice": "$ 27.641,85",
+    "resellerPrice": "$ 20.469,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-grapes-270-grs",
     "name": "star nutrition mtor bcaa grapes 270 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.359,06",
-    "resellerPrice": "$ 21.741,57"
+    "publicPrice": "$ 27.641,85",
+    "resellerPrice": "$ 20.469,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-green-lemon-270-grs",
     "name": "star nutrition mtor bcaa green lemon 270 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.359,06",
-    "resellerPrice": "$ 21.741,57"
+    "publicPrice": "$ 27.641,85",
+    "resellerPrice": "$ 20.469,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-strawberry-lemon-270-grs",
     "name": "star nutrition mtor bcaa strawberry lemon 270 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.359,06",
-    "resellerPrice": "$ 21.741,57"
+    "publicPrice": "$ 27.641,85",
+    "resellerPrice": "$ 20.469,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-watermelon-270-grs",
     "name": "star nutrition mtor bcaa watermelon 270 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 29.359,06",
-    "resellerPrice": "$ 21.741,57"
+    "publicPrice": "$ 27.641,85",
+    "resellerPrice": "$ 20.469,91"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-x-540-grs-blue-razz",
     "name": "star nutrition mtor bcaa x 540 grs blue razz",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.576,70",
-    "resellerPrice": "$ 26.345,99"
+    "publicPrice": "$ 33.493,75",
+    "resellerPrice": "$ 24.803,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-x-540-grs-fruit-punch",
     "name": "star nutrition mtor bcaa x 540 grs fruit punch",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.576,70",
-    "resellerPrice": "$ 26.345,99"
+    "publicPrice": "$ 33.493,75",
+    "resellerPrice": "$ 24.803,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-x-540-grs-grapes",
     "name": "star nutrition mtor bcaa x 540 grs grapes",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.576,70",
-    "resellerPrice": "$ 26.345,99"
+    "publicPrice": "$ 33.493,75",
+    "resellerPrice": "$ 24.803,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-x-540-grs-green-lemon",
     "name": "star nutrition mtor bcaa x 540 grs green lemon",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.576,70",
-    "resellerPrice": "$ 26.345,99"
+    "publicPrice": "$ 33.493,75",
+    "resellerPrice": "$ 24.803,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-x-540-grs-strawberry-lemon",
     "name": "star nutrition mtor bcaa x 540 grs strawberry lemon",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.576,70",
-    "resellerPrice": "$ 26.345,99"
+    "publicPrice": "$ 33.493,75",
+    "resellerPrice": "$ 24.803,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mtor-bcaa-x-540-grs-watermelon",
     "name": "star nutrition mtor bcaa x 540 grs watermelon",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 35.576,70",
-    "resellerPrice": "$ 26.345,99"
+    "publicPrice": "$ 33.493,75",
+    "resellerPrice": "$ 24.803,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-mutantmass-banana-1-5-kgs",
@@ -2126,8 +2152,8 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-n-o-booster-5-180-tabs",
     "name": "star nutrition n.o. booster 5 180 tabs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 28.959,58",
-    "resellerPrice": "$ 21.445,74"
+    "publicPrice": "$ 27.265,87",
+    "resellerPrice": "$ 20.191,48"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-natural-premium-whey-cocoa-pure-2-lb",
@@ -2168,8 +2194,8 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-omega-3-fish-oil-60-caps",
     "name": "star nutrition omega 3 fish oil 60 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 32.570,24",
-    "resellerPrice": "$ 24.119,58"
+    "publicPrice": "$ 30.664,14",
+    "resellerPrice": "$ 22.708,04"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-platinum-whey-isolate-banana-2-lb",
@@ -2273,78 +2299,78 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-pump-3d-evolution-ripped-lemon-315-grs",
     "name": "star nutrition pump 3d evolution ripped lemon 315 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 37.947,82",
-    "resellerPrice": "$ 28.101,90"
+    "publicPrice": "$ 35.725,39",
+    "resellerPrice": "$ 26.456,10"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-pump-3d-evolution-ripped-strawberry-lemon-315-grs",
     "name": "star nutrition pump 3d evolution ripped strawberry lemon 315 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 37.947,82",
-    "resellerPrice": "$ 28.101,90"
+    "publicPrice": "$ 35.725,39",
+    "resellerPrice": "$ 26.456,10"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-pump-v8-acai-285-grs",
     "name": "star nutrition pump v8 acai 285 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 31.848,11",
-    "resellerPrice": "$ 23.584,82"
+    "publicPrice": "$ 29.984,48",
+    "resellerPrice": "$ 22.204,73"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-pump-v8-grape-285-grs",
     "name": "star nutrition pump v8 grape 285 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 31.848,11",
-    "resellerPrice": "$ 23.584,82"
+    "publicPrice": "$ 29.984,48",
+    "resellerPrice": "$ 22.204,73"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-pump-v8-lima-limon-285-grs",
     "name": "star nutrition pump v8 lima limon 285 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 31.848,11",
-    "resellerPrice": "$ 23.584,82"
+    "publicPrice": "$ 29.984,48",
+    "resellerPrice": "$ 22.204,73"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-pump-v8-watermelon-285-grs",
     "name": "star nutrition pump v8 watermelon 285 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 31.848,11",
-    "resellerPrice": "$ 23.584,82"
+    "publicPrice": "$ 29.984,48",
+    "resellerPrice": "$ 22.204,73"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-resveratrol-500-antioxidante-vasodilatador-60-caps",
     "name": "star nutrition resveratrol 500 (antioxidante, vasodilatador) 60 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 20.570,56",
-    "resellerPrice": "$ 15.233,33"
+    "publicPrice": "$ 19.370,32",
+    "resellerPrice": "$ 14.344,51"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-second-shift-chocolate-2-lb",
     "name": "star nutrition second shift chocolate 2 lb",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 25.123,45",
-    "resellerPrice": "$ 18.604,93"
+    "publicPrice": "$ 23.655,39",
+    "resellerPrice": "$ 17.517,78"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-second-shift-fruit-slush-2-lb",
     "name": "star nutrition second shift fruit slush 2 lb",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 25.123,45",
-    "resellerPrice": "$ 18.604,93"
+    "publicPrice": "$ 23.655,39",
+    "resellerPrice": "$ 17.517,78"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-second-shift-vainilla-2-lb",
     "name": "star nutrition second shift vainilla 2 lb",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 25.123,45",
-    "resellerPrice": "$ 18.604,93"
+    "publicPrice": "$ 23.655,39",
+    "resellerPrice": "$ 17.517,78"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-shaker-corto-2023",
     "name": "star nutrition shaker corto 2023",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 7.357,09",
-    "resellerPrice": "$ 5.448,22"
+    "publicPrice": "$ 6.934,11",
+    "resellerPrice": "$ 5.134,99"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-shaker-corto-star-2023",
@@ -2357,15 +2383,15 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-shaker-got-protein-blender",
     "name": "star nutrition shaker got protein blender",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 7.357,09",
-    "resellerPrice": "$ 5.448,22"
+    "publicPrice": "$ 6.934,11",
+    "resellerPrice": "$ 5.134,99"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-shaker-pump-v8",
     "name": "star nutrition shaker pump v8",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 7.357,09",
-    "resellerPrice": "$ 5.448,22"
+    "publicPrice": "$ 6.934,11",
+    "resellerPrice": "$ 5.134,99"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-starcuts-ripped-120-caps",
@@ -2385,43 +2411,43 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-thermo-fuel-120-caps",
     "name": "star nutrition thermo fuel 120 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 20.923,95",
-    "resellerPrice": "$ 15.495,03"
+    "publicPrice": "$ 19.702,92",
+    "resellerPrice": "$ 14.590,81"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-tnt-dynamite-explosive-energy-acai-240-grs",
     "name": "star nutrition tnt dynamite explosive energy acai 240 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 23.950,75",
-    "resellerPrice": "$ 17.736,50"
+    "publicPrice": "$ 22.551,68",
+    "resellerPrice": "$ 16.700,43"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-tnt-dynamite-explosive-energy-blue-razz-240-grs",
     "name": "star nutrition tnt dynamite explosive energy blue razz 240 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 23.950,75",
-    "resellerPrice": "$ 17.736,50"
+    "publicPrice": "$ 22.551,68",
+    "resellerPrice": "$ 16.700,43"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-tnt-dynamite-explosive-energy-citrus-240-grs",
     "name": "star nutrition tnt dynamite explosive energy citrus 240 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 23.950,75",
-    "resellerPrice": "$ 17.736,50"
+    "publicPrice": "$ 22.551,68",
+    "resellerPrice": "$ 16.700,43"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-tnt-dynamite-explosive-energy-grape-240-grs",
     "name": "star nutrition tnt dynamite explosive energy grape 240 grs",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 23.950,75",
-    "resellerPrice": "$ 17.736,50"
+    "publicPrice": "$ 22.551,68",
+    "resellerPrice": "$ 16.700,43"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-vitamina-c-60-caps",
     "name": "star nutrition vitamina c 60 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 7.971,67",
-    "resellerPrice": "$ 5.903,34"
+    "publicPrice": "$ 7.512,54",
+    "resellerPrice": "$ 5.563,34"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-whey-protein-doypack-banana-2-lbs",
@@ -2462,8 +2488,8 @@
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-zma-90-caps",
     "name": "star nutrition zma 90 caps",
     "brand": "STAR NUTRITION",
-    "publicPrice": "$ 18.404,17",
-    "resellerPrice": "$ 13.629,03"
+    "publicPrice": "$ 17.331,36",
+    "resellerPrice": "$ 12.834,58"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/whey-protein-true-made-5",
