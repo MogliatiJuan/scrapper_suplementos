@@ -1082,7 +1082,8 @@
     "name": "gold nutrition k2 + d3 vitamins x 30 comp",
     "brand": "GOLD NUTRITION",
     "publicPrice": "$ 15.808,50",
-    "resellerPrice": "$ 11.680,73"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gold-nutrition-l-glutamine-micronizada-225-grs",
@@ -1096,7 +1097,8 @@
     "name": "gold nutrition lipoburn hardcore 120 tabletas",
     "brand": "GOLD NUTRITION",
     "publicPrice": "$ 15.957,00",
-    "resellerPrice": "$ 15.957,00"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/gold-nutrition-lipogold-elite-u-c-60-caps",
