@@ -1,14 +1,21 @@
 #!/usr/bin/env node
-require("dotenv").config();
+import "dotenv/config";
+import express from "express";
+import cors from "cors";
+import puppeteer from "puppeteer";
+import nodemailer from "nodemailer";
 
-const express = require("express");
-const puppeteer = require("puppeteer");
-const ejs = require("ejs");
-const path = require("path");
-const cors = require("cors");
-const fs = require("fs");
-const nodemailer = require("nodemailer");
-const ExcelJS = require("exceljs");
+import fs from "fs";
+import path from "path";
+import ExcelJS from "exceljs";
+import ejs from "ejs";
+import { notifyTelegram, notifyTelegramError } from "./telegram.js";
+import { fileURLToPath } from "url";
+import { resolve } from "path";
+
+const thisFile = fileURLToPath(import.meta.url);
+const invokedFile = resolve(process.argv[1] || "");
+const __dirname = path.resolve();
 
 const app = express();
 app.use(cors());
@@ -16,12 +23,29 @@ app.use(cors());
 const PORT = process.env.PORT || 4000;
 const BASE_URL = process.env.BASE_URL;
 const AUTH_URL = process.env.AUTH_URL;
-const VALID_BRANDS = ["Star", "Ena", "Gentech", "Gold", "Mervick", "Max force", "Granger"];
+const VALID_BRANDS = [
+  "Star",
+  "Ena",
+  "Gentech",
+  "Gold",
+  "Mervick",
+  "Max force",
+  "Granger",
+];
+const isDev = process.env.NODE_ENV !== "production";
+
+const log = (...args) => isDev && console.log(...args);
+const warn = (...args) => isDev && console.warn(...args);
+const error = (...args) => console.error(...args);
+
+function normalizePrice(p) {
+  return (p || "").replace(/[^\d]/g, "");
+}
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: +process.env.SMTP_PORT,
-  auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS }
+  auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
 });
 
 const REPORT_DIR = path.join(__dirname, "reports");
@@ -30,8 +54,11 @@ app.use("/reports", express.static(REPORT_DIR));
 
 const LAST_FILE = path.join(__dirname, "lastPrices.json");
 function loadLast() {
-  try { return JSON.parse(fs.readFileSync(LAST_FILE, "utf8")); }
-  catch { return []; }
+  try {
+    return JSON.parse(fs.readFileSync(LAST_FILE, "utf8"));
+  } catch {
+    return [];
+  }
 }
 function saveLast(data) {
   fs.writeFileSync(LAST_FILE, JSON.stringify(data, null, 2));
@@ -39,7 +66,8 @@ function saveLast(data) {
 
 function categorizeType(name) {
   const n = name.toLowerCase();
-  if (n.includes("protein bar") || n.includes("barra")) return "Barra de proteína";
+  if (n.includes("protein bar") || n.includes("barra"))
+    return "Barra de proteína";
   if (n.includes("whey") || n.includes("proteína")) return "Proteína";
   if (n.includes("creatina")) return "Creatina";
   if (n.includes("bcaa") || n.includes("amino")) return "Aminoácidos / BCAA";
@@ -59,22 +87,31 @@ function groupByBrandAndType(products) {
 
 function diffPrices(oldArr, newArr) {
   if (oldArr.length === 0) {
-    return newArr.map(n => ({
-      href: n.href, name: n.name,
-      oldPublic: "-", newPublic: n.publicPrice,
-      oldReseller: "-", newReseller: n.resellerPrice
+    return newArr.map((n) => ({
+      href: n.href,
+      name: n.name,
+      oldPublic: "-",
+      newPublic: n.publicPrice,
+      oldReseller: "-",
+      newReseller: n.resellerPrice,
     }));
   }
-  const oldMap = Object.fromEntries(oldArr.map(p => [p.href, p]));
+  const oldMap = Object.fromEntries(oldArr.map((p) => [p.href, p]));
   const changes = [];
   for (const n of newArr) {
     const o = oldMap[n.href];
     if (!o) continue;
-    if (o.publicPrice !== n.publicPrice || o.resellerPrice !== n.resellerPrice) {
+    if (
+      o.publicPrice !== n.publicPrice ||
+      o.resellerPrice !== n.resellerPrice
+    ) {
       changes.push({
-        href: n.href, name: n.name,
-        oldPublic: o.publicPrice, newPublic: n.publicPrice,
-        oldReseller: o.resellerPrice, newReseller: n.resellerPrice
+        href: n.href,
+        name: n.name,
+        oldPublic: o.publicPrice,
+        newPublic: n.publicPrice,
+        oldReseller: o.resellerPrice,
+        newReseller: n.resellerPrice,
       });
     }
   }
@@ -89,8 +126,8 @@ async function generateAndSavePdf(html) {
       "--disable-setuid-sandbox",
       "--disable-dev-shm-usage",
       "--disable-extensions",
-      "--disable-gpu"
-    ]
+      "--disable-gpu",
+    ],
   });
   const page = await browser.newPage();
   await page.setContent(html, { waitUntil: "networkidle0" });
@@ -109,25 +146,26 @@ async function generateAndSaveExcel(results) {
       header: "Precio Público",
       key: "publicPrice",
       width: 15,
-      style: { numFmt: "#.##0,00" }
+      style: { numFmt: "#.##0,00" },
     },
     {
       header: "Precio Revendedor",
       key: "resellerPrice",
       width: 15,
-      style: { numFmt: "#.##0,00" }
+      style: { numFmt: "#.##0,00" },
     },
     { header: "Presentación", key: "presentacion", width: 15 },
     { header: "Sabor", key: "sabor", width: 15 },
     { header: "Stock", key: "inStock", width: 10 },
-    { header: "Error", key: "error", width: 30 }
+    { header: "Error", key: "error", width: 30 },
   ];
-
-  results.forEach(p => {
+  results.forEach((p) => {
     const rawPub = (p.publicPrice || "").replace(/[^\d.,]/g, "");
     const rawRev = (p.resellerPrice || "").replace(/[^\d.,]/g, "");
-    const numPub = parseFloat(rawPub.replace(/\./g, "").replace(/,/g, ".")) || 0;
-    const numRev = parseFloat(rawRev.replace(/\./g, "").replace(/,/g, ".")) || 0;
+    const numPub =
+      parseFloat(rawPub.replace(/\./g, "").replace(/,/g, ".")) || 0;
+    const numRev =
+      parseFloat(rawRev.replace(/\./g, "").replace(/,/g, ".")) || 0;
 
     ws.addRow({
       brand: p.brand,
@@ -136,8 +174,8 @@ async function generateAndSaveExcel(results) {
       resellerPrice: numRev,
       presentacion: p.presentacion || "-",
       sabor: p.sabor || "-",
-      inStock: p.inStock === null ? "-" : (p.inStock ? "En stock" : "Sin stock"),
-      error: p.error || ""
+      inStock: p.inStock === null ? "-" : p.inStock ? "En stock" : "Sin stock",
+      error: p.error || "",
     });
   });
 
@@ -145,13 +183,17 @@ async function generateAndSaveExcel(results) {
 }
 
 async function sendChangeEmail(changes) {
-  const rows = changes.map(c => `
+  const rows = changes
+    .map(
+      (c) => `
     <tr>
       <td><a href="${c.href}">${c.name}</a></td>
       <td>${c.oldPublic} → ${c.newPublic}</td>
       <td>${c.oldReseller || "-"} → ${c.newReseller || "-"}</td>
     </tr>
-  `).join("");
+  `
+    )
+    .join("");
   const html = `
     <p>Se han detectado cambios en ${changes.length} productos:</p>
     <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse">
@@ -160,102 +202,211 @@ async function sendChangeEmail(changes) {
     </table>
     <p>Adjunto encontrarás el PDF y el Excel con el detalle completo.</p>
   `;
-  await transporter.sendMail({
-    from: process.env.FROM_EMAIL,
-    to: process.env.TO_EMAIL,
-    subject: `📈 Cambios de precio (${changes.length})`,
-    html,
-    attachments: [
-      { filename: "reporte-precios.pdf", path: path.join(REPORT_DIR, "latest.pdf"), contentType: "application/pdf" },
-      { filename: "reporte-precios.xlsx", path: path.join(REPORT_DIR, "latest.xlsx"), contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }
-    ]
-  });
+  try {
+    await transporter.sendMail({
+      from: process.env.FROM_EMAIL,
+      to: process.env.TO_EMAIL,
+      subject: `📈 Cambios de precio (${changes.length})`,
+      html,
+      attachments: [
+        {
+          filename: "reporte-precios.pdf",
+          path: path.join(REPORT_DIR, "latest.pdf"),
+          contentType: "application/pdf",
+        },
+        {
+          filename: "reporte-precios.xlsx",
+          path: path.join(REPORT_DIR, "latest.xlsx"),
+          contentType:
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        },
+      ],
+    });
+  } catch (err) {
+    console.error("❌ Error enviando email:", err);
+    await notifyTelegramError("❌ Falló el envío de email: " + err.message);
+    throw err;
+  }
 }
 
 async function scrapeAll() {
+  log("🟢 Iniciando scraping...");
   const browser = await puppeteer.launch({
     headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--disable-extensions", "--disable-gpu"]
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-extensions",
+      "--disable-gpu",
+    ],
+    defaultViewport: null,
   });
-  const page = await browser.newPage();
 
-  await page.goto(BASE_URL, { waitUntil: "networkidle0", timeout: 60000 });
-  const totalPages = await page.evaluate(() => {
+  const productsMap = new Map();
+  const pagePublic = await browser.newPage();
+  await pagePublic.goto(BASE_URL, {
+    waitUntil: "domcontentloaded",
+    timeout: 60000,
+  });
+
+  const totalPages = await pagePublic.evaluate(() => {
     const sel = document.querySelector("ul.pagination select.form-control");
     return sel ? sel.options.length : 1;
   });
 
+  log(`🔎 Total de páginas detectadas: ${totalPages}`);
 
-  const products = [];
+  // 1️⃣ Scrape público
   for (let i = 1; i <= totalPages; i++) {
-    await page.goto(`${BASE_URL}?page=${i}`, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await page.waitForSelector(".product-list__item", { timeout: 60000 });
-    const cards = await page.$$eval(".product-list__item", (nodes, brands) =>
-      nodes.map(card => {
-        const linkEl = card.querySelector("h3 a");
-        const brandEl = card.querySelector("small.brand");
-        const priceEl = card.querySelector(".price");
-        if (!linkEl || !brandEl || !priceEl) return null;
-        const brand = brandEl.innerText.trim();
-        if (!brands.some(b => brand.toLowerCase().includes(b.toLowerCase())))
-          return null;
-        return {
-          href: linkEl.href,
-          name: linkEl.innerText.trim(),
-          brand,
-          publicPrice: priceEl.innerText.trim()
-        };
-      }).filter(Boolean),
+    log(`➡️ Página ${i}/${totalPages} [Público]`);
+    await pagePublic.goto(`${BASE_URL}?page=${i}`, {
+      waitUntil: "domcontentloaded",
+      timeout: 60000,
+    });
+
+    try {
+      await pagePublic.waitForSelector(".product-list__item", {
+        timeout: 10000,
+      });
+    } catch {
+      warn(`⚠️ Página ${i} sin productos`);
+      continue;
+    }
+
+    const cards = await pagePublic.$$eval(
+      ".product-list__item",
+      (nodes, brands) =>
+        nodes
+          .map((card) => {
+            const linkEl = card.querySelector("h3 a");
+            const brandEl = card.querySelector("small.brand");
+            const priceEl = card.querySelector(".price");
+            if (!linkEl || !brandEl || !priceEl) return null;
+            const brand = brandEl.innerText.trim();
+            if (
+              !brands.some((b) => brand.toLowerCase().includes(b.toLowerCase()))
+            )
+              return null;
+            return {
+              href: linkEl.href,
+              name: linkEl.innerText.trim(),
+              brand,
+              publicPrice: priceEl.innerText.trim(),
+            };
+          })
+          .filter(Boolean),
       VALID_BRANDS
     );
-    products.push(...cards);
+
+    for (const p of cards) {
+      productsMap.set(p.href, p);
+    }
+    log(`✅ Productos encontrados: ${cards.length}`);
   }
 
-  const validProducts = products.filter(p => {
-    const raw = (p.publicPrice || "").replace(/[^\d.,]/g, "")
-    if (!raw) return false
+  await pagePublic.close();
 
-    const [intPart, decPart = ""] = raw.split(",")
-    const numInt = parseInt(intPart.replace(/\./g, ""), 10) || 0
-    const numDec = parseInt(decPart.padEnd(2, "0").slice(0, 2), 10) || 0
-
-    return !(numInt === 0 && numDec === 0)
-  })
-
-  await page.goto(AUTH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
-  await page.type("input[name=_username]", process.env.VYJ_USER);
-  await page.type("input[name=_password]", process.env.VYJ_PASS);
+  // 2️⃣ Scrape revendedor
+  const pageReseller = await browser.newPage();
+  await pageReseller.goto(AUTH_URL, {
+    waitUntil: "domcontentloaded",
+    timeout: 60000,
+  });
+  await pageReseller.type("input[name=_username]", process.env.VYJ_USER);
+  await pageReseller.type("input[name=_password]", process.env.VYJ_PASS);
   await Promise.all([
-    page.click("button[type=submit]"),
-    page.waitForNavigation({ waitUntil: "networkidle0", timeout: 60000 })
+    pageReseller.click("button[type=submit]"),
+    pageReseller.waitForNavigation({
+      waitUntil: "domcontentloaded",
+      timeout: 15000,
+    }),
   ]);
+  await pageReseller.goto(BASE_URL, {
+    waitUntil: "domcontentloaded",
+    timeout: 60000,
+  });
+  log("✅ Login exitoso y redirección a productos.");
 
-  for (const p of validProducts) {
+  for (let i = 1; i <= totalPages; i++) {
+    log(`➡️ Página ${i}/${totalPages} [Revendedor]`);
+    await pageReseller.goto(`${BASE_URL}?page=${i}`, {
+      waitUntil: "domcontentloaded",
+      timeout: 60000,
+    });
+
     try {
-      await page.goto(p.href, {
-        waitUntil: "domcontentloaded",
-        timeout: 40000
+      await pageReseller.waitForSelector(".product-list__item", {
+        timeout: 10000,
       });
-      await page.waitForSelector(".product-price .price", {
-        timeout: 40000
-      });
-      const spans = await page.$$eval(
-        ".product-price .price",
-        els => els.map(el => el.innerText.trim())
-      );
-      p.resellerPrice = spans[1] ?? spans[0] ?? null;
-    } catch (err) {
-      console.warn(`⚠️ Error scraping ${p.href}: ${err.message}`);
-      p.error = err.message;
-      p.resellerPrice = null;
+    } catch {
+      warn(`⚠️ Página ${i} sin productos`);
+      continue;
+    }
+
+    const updated = await pageReseller.$$eval(".product-list__item", (nodes) =>
+      nodes
+        .map((card) => {
+          const linkEl = card.querySelector("h3 a");
+          const priceEl = card.querySelector(".price");
+          if (!linkEl || !priceEl) return null;
+          return {
+            href: linkEl.href,
+            resellerPrice: priceEl.innerText.trim(),
+          };
+        })
+        .filter(Boolean)
+    );
+
+    for (const u of updated) {
+      if (productsMap.has(u.href)) {
+        productsMap.get(u.href).resellerPrice = u.resellerPrice;
+      }
     }
   }
 
+  // 3️⃣ Scrape sabor/presentación
+  const context = browser.defaultBrowserContext();
+  const cookies = await context.cookies();
+  const productPage = await browser.newPage();
+  await context.setCookie(...cookies);
+
+  log("🔎 Obteniendo sabor y presentación...");
+  for (const p of productsMap.values()) {
+    try {
+      await productPage.goto(p.href, {
+        waitUntil: "domcontentloaded",
+        timeout: 60000,
+      });
+
+      const data = await productPage.evaluate(() => {
+        const getInfo = (label) => {
+          const row = [
+            ...document.querySelectorAll("tr[data-technical-info]"),
+          ].find(
+            (r) =>
+              r.getAttribute("data-technical-info")?.toLowerCase() ===
+              label.toLowerCase()
+          );
+          return row?.querySelector("td")?.innerText.trim() || null;
+        };
+        return {
+          sabor: getInfo("SABOR"),
+          presentacion: getInfo("PRESENTACION"),
+        };
+      });
+
+      p.sabor = data.sabor;
+      p.presentacion = data.presentacion;
+    } catch (err) {
+      warn(`⚠️ Error accediendo a ${p.name}: ${err.message}`);
+      p.error = `Detalle: ${err.message}`;
+    }
+  }
 
   await browser.close();
-  return validProducts;
+  return [...productsMap.values()];
 }
-
 
 async function runDailyJob() {
   const newData = await scrapeAll();
@@ -264,10 +415,13 @@ async function runDailyJob() {
 
   if (changes.length > 0 || oldData.length === 0) {
     const grouped = groupByBrandAndType(newData);
-    const html = await ejs.renderFile(path.join(__dirname, "template.ejs"), { grouped });
+    const html = await ejs.renderFile(path.join(__dirname, "template.ejs"), {
+      grouped,
+    });
     await generateAndSavePdf(html);
     await generateAndSaveExcel(newData);
     await sendChangeEmail(changes);
+    await notifyTelegram(changes);
     saveLast(newData);
     console.log("✅ Job completado");
   } else {
@@ -296,13 +450,17 @@ app.get("/api/update-prices", async (req, res) => {
   }
 });
 
-if (require.main === module) {
+if (thisFile === invokedFile) {
   const cmd = process.argv[2];
   if (cmd === "scrape") {
     runDailyJob()
-      .catch(err => { console.error(err); process.exit(1); })
+      .catch(async (err) => {
+        error(err);
+        await notifyTelegramError(err.message);
+        process.exit(1);
+      })
       .then(() => process.exit(0));
   } else {
-    app.listen(PORT, () => console.log(`🚀 Server en http://localhost:${PORT}`));
+    app.listen(PORT, () => log(`🚀 Server en http://localhost:${PORT}`));
   }
 }
