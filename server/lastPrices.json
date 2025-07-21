@@ -1852,7 +1852,8 @@
     "name": "star nutrition essential amino x 360g limon",
     "brand": "STAR NUTRITION",
     "publicPrice": "$ 33.912,27",
-    "resellerPrice": "$ 25.811,01"
+    "error": "Navigation timeout of 40000 ms exceeded",
+    "resellerPrice": null
   },
   {
     "href": "https://vyjsuplementos.ar/producto/star-nutrition-hmb-180-caps",
