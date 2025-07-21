@@ -9,12 +9,12 @@ function formatChange(c) {
   return `• *${c.name}*\n` +
     `  Público: ${
       pubChanged
-        ? `~~${c.oldPublic}~~ → *${c.newPublic}*`
+        ? `${c.oldPublic} → *${c.newPublic}*`
         : `${c.newPublic}`
     }\n` +
     `  Rev.: ${
       revChanged
-        ? `~~${c.oldReseller || "-"}~~ → *${c.newReseller || "-"}*`
+        ? `${c.oldReseller || "-"} → *${c.newReseller || "-"}*`
         : `${c.newReseller || "-"}`
     }`;
 }
