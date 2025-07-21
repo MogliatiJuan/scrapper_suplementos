@@ -2,15 +2,17 @@ name: 🗓 Info precios diario
 
 on:
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '0 13 * * *'  # Ejecuta todos los días a las 13:00 UTC (10:00 ARG)
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
     env:
+      NODE_ENV: production
       BASE_URL:    ${{ secrets.BASE_URL }}
       AUTH_URL:    ${{ secrets.AUTH_URL }}
       VYJ_USER:    ${{ secrets.VYJ_USER }}
@@ -21,6 +23,9 @@ jobs:
       SMTP_PASS:   ${{ secrets.SMTP_PASS }}
       FROM_EMAIL:  ${{ secrets.FROM_EMAIL }}
       TO_EMAIL:    ${{ secrets.TO_EMAIL }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
 
     steps:
       - name: Checkout repo
@@ -64,3 +69,10 @@ jobs:
         with:
           name: reporte-xlsx
           path: server/reports/latest.xlsx
+
+      - name: Subir capturas de error si hay
+        if: always()  # Ejecuta incluso si el scraper falló
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-screenshots
+          path: server/debug-page-*.png
