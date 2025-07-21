@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "scrape": "node server.js scrape",
@@ -16,6 +17,7 @@
     "ejs": "^3.1.10",
     "exceljs": "^4.4.0",
     "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
     "nodemailer": "^7.0.2",
     "nodemon": "^3.1.10",
     "puppeteer": "^24.8.0"
