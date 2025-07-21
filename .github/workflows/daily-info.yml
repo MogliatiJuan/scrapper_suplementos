@@ -50,14 +50,15 @@ jobs:
       - name: Commit y push de lastPrices.json
         run: |
           cd server
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git pull --rebase origin main || true
           git add lastPrices.json
           git diff --quiet --cached || (
-            git config user.name "github-actions[bot]" &&
-            git config user.email "actions@github.com" &&
             git commit -m "ci: actualizar snapshot de precios" &&
-            git pull --rebase origin main &&
             git push
           )
+
 
       - name: Subir PDF como artefacto
         uses: actions/upload-artifact@v4
