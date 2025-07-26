@@ -120,8 +120,8 @@
     "href": "https://vyjsuplementos.ar/producto/ena-sport-creatina-electrolitos-p-l-302-grs",
     "name": "ena sport creatina + electrolitos p.l 302 grs",
     "brand": "ENA SPORT",
-    "publicPrice": "$ 31.678,00",
-    "resellerPrice": "$ 31.678,00",
+    "publicPrice": "$ 31.678,20",
+    "resellerPrice": "$ 20.893,53",
     "sabor": null,
     "presentacion": null
   },
@@ -139,7 +139,7 @@
     "name": "ena sport creatina micronizada fruit punch 300 grs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 33.624,00",
-    "resellerPrice": "$ 22.275,50",
+    "resellerPrice": "$ 23.364,94",
     "sabor": "FRUIT PUNCH",
     "presentacion": "300 GRS"
   },
@@ -148,7 +148,7 @@
     "name": "ena sport creatina micronizada naranja 342 grs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 33.624,00",
-    "resellerPrice": "$ 33.624,00",
+    "resellerPrice": "$ 23.364,94",
     "sabor": null,
     "presentacion": null
   },
@@ -157,7 +157,7 @@
     "name": "ena sport creatina micronizada sin sabor 300 grs",
     "brand": "ENA SPORT",
     "publicPrice": "$ 33.624,00",
-    "resellerPrice": "$ 22.275,50",
+    "resellerPrice": "$ 23.364,94",
     "sabor": "SIN SABOR",
     "presentacion": "300 GRS"
   },
@@ -1771,87 +1771,6 @@
     "resellerPrice": "$ 43.777,89",
     "sabor": null,
     "presentacion": null
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-bcaa-2-1-1-120-comp",
-    "name": "max force bcaa 2:1:1 120 comp",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 9.734,00",
-    "resellerPrice": "$ 6.716,46",
-    "sabor": null,
-    "presentacion": "120 COMP"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-bcaa-8-1-1-280-grs-frutilla",
-    "name": "max force bcaa 8:1:1 280 grs frutilla",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 17.650,00",
-    "resellerPrice": "$ 12.178,50",
-    "sabor": "FRUTILLA",
-    "presentacion": "280 GRS"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-bcaa-8-1-1-280-grs-tutti-fruti",
-    "name": "max force bcaa 8:1:1 280 grs tutti-fruti",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 17.650,00",
-    "resellerPrice": "$ 12.178,50",
-    "sabor": "TUTTI-FRUTI",
-    "presentacion": "280 GRS"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-bcaa-8-1-1-280-grs-uva",
-    "name": "max force bcaa 8:1:1 280 grs uva",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 17.650,00",
-    "resellerPrice": "$ 12.178,50",
-    "sabor": "UVA",
-    "presentacion": "280 GRS"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-colageno-300-grs",
-    "name": "max force colageno 300 grs",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 20.542,00",
-    "resellerPrice": "$ 14.173,98",
-    "sabor": null,
-    "presentacion": "300 GRS"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-creatina-300-grs-tutti-fruti",
-    "name": "max force creatina 300 grs tutti-fruti",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 12.000,00",
-    "resellerPrice": "$ 8.280,00",
-    "sabor": "TUTTI-FRUTI",
-    "presentacion": "300 GRS"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-creatina-300-grs-uva",
-    "name": "max force creatina 300 grs uva",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 12.000,00",
-    "resellerPrice": "$ 8.280,00",
-    "sabor": "UVA",
-    "presentacion": "300 GRS"
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-creatina-pura-250-grs",
-    "name": "max force creatina pura 250 grs",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 13.200,00",
-    "resellerPrice": "$ 9.108,00",
-    "sabor": null,
-    "presentacion": null
-  },
-  {
-    "href": "https://vyjsuplementos.ar/producto/max-force-glutamina-250-grs-tutti-fruti",
-    "name": "max force glutamina 250 grs tutti-fruti",
-    "brand": "MAX FORCE",
-    "publicPrice": "$ 13.410,00",
-    "resellerPrice": "$ 9.252,90",
-    "sabor": "TUTTI-FRUTI",
-    "presentacion": "250 grs"
   },
   {
     "href": "https://vyjsuplementos.ar/producto/max-force-magnesio-citrato-150-grs",
