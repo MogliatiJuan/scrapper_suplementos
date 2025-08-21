@@ -106,6 +106,7 @@ Puedes personalizar la frecuencia editando el cron job en `daily-info.yml`.
 
 ## 📂 Estructura del proyecto
 
+```
 📦bfm_suplementos
  ┣ 📂.git
  ┣ 📂.github
@@ -142,6 +143,7 @@ Puedes personalizar la frecuencia editando el cron job en `daily-info.yml`.
  ┃ ┗ 📜template.ejs
  ┣ 📜LICENSE
  ┗ 📜README.md
+```
 ---
 
 ## 📜 Licencia
